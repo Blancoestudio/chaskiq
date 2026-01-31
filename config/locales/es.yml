@@ -104,7 +104,7 @@ es:
       steps:
         channels:
           title: Configura canales para comunicarte con tus clientes
-          description: Gestiona conversaciones en todos los canales: Messenger, email, WhatsApp, SMS y redes sociales.
+          description: "Gestiona conversaciones en todos los canales: Messenger, email, WhatsApp, SMS y redes sociales."
           action: Configurar canales
         team:
           title: Invita a tu equipo a colaborar más rápido

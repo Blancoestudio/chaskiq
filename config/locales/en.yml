@@ -104,7 +104,7 @@ en:
       steps:
         channels:
           title: Configure channels to communicate with your customers
-          description: Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.
+          description: "Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks."
           action: Configure channels
         team:
           title: Invite your team members to collaborate faster

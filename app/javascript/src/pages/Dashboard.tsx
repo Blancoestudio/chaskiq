@@ -35,7 +35,7 @@ import { allowedAccessTo } from '@chaskiq/components/src/components/AccessDenied
 export function Home() {
   return (
     <div>
-      <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Dashboard</h1>
+      <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">{I18n.t('navigator.dashboard')}</h1>
     </div>
   );
 }
@@ -55,25 +55,25 @@ function Dashboard(props) {
   const onboardingSteps = [
     {
       id: 'channels',
-      title: 'Configure channels to communicate with your customers',
-      description: 'Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.',
-      action: 'Configure channels',
+      title: I18n.t('dashboard.onboarding.steps.channels.title'),
+      description: I18n.t('dashboard.onboarding.steps.channels.description'),
+      action: I18n.t('dashboard.onboarding.steps.channels.action'),
       actionHref: `${appPath}/messenger`,
       completed: app.activeMessenger,
     },
     {
       id: 'team',
-      title: 'Invite your team members to collaborate faster',
-      description: 'Add team members to help respond to customers and manage conversations.',
-      action: 'Invite team',
+      title: I18n.t('dashboard.onboarding.steps.team.title'),
+      description: I18n.t('dashboard.onboarding.steps.team.description'),
+      action: I18n.t('dashboard.onboarding.steps.team.action'),
       actionHref: `${appPath}/team`,
       completed: false,
     },
     {
       id: 'content',
-      title: 'Add content to power your AI and help center',
-      description: 'Create articles and knowledge base content to help customers self-serve.',
-      action: 'Create content',
+      title: I18n.t('dashboard.onboarding.steps.content.title'),
+      description: I18n.t('dashboard.onboarding.steps.content.description'),
+      action: I18n.t('dashboard.onboarding.steps.content.action'),
       actionHref: `${appPath}/articles`,
       completed: false,
     },
@@ -94,7 +94,7 @@ function Dashboard(props) {
     {
       id: 'messenger',
       title: I18n.t('settings.active_messenger.label'), // "Activate messenger" or similar
-      description: 'Configure your chat widget',
+      description: I18n.t('dashboard.cards.messenger.description'),
       icon: <PlatformIcon />,
       iconColor: 'blue' as const,
       href: `${appPath}/messenger`,
@@ -102,8 +102,8 @@ function Dashboard(props) {
     },
     {
       id: 'reports',
-      title: 'Reports & Analytics',
-      description: 'Track metrics and understand how your team is performing.',
+      title: I18n.t('dashboard.cards.reports.title'),
+      description: I18n.t('dashboard.cards.reports.description'),
       icon: <ChartsIcons />,
       iconColor: 'purple' as const,
       href: `${appPath}/reports`,
@@ -111,8 +111,8 @@ function Dashboard(props) {
     },
     {
       id: 'campaigns',
-      title: 'Campaigns',
-      description: 'Send targeted messages to your customers.',
+      title: I18n.t('dashboard.cards.campaigns.title'),
+      description: I18n.t('dashboard.cards.campaigns.description'),
       icon: <MailingIcon />,
       iconColor: 'blue' as const,
       href: `${appPath}/campaigns`,
@@ -120,8 +120,8 @@ function Dashboard(props) {
     },
     {
       id: 'settings',
-      title: 'App Settings',
-      description: 'Configure your workspace settings.',
+      title: I18n.t('dashboard.cards.settings.title'),
+      description: I18n.t('dashboard.cards.settings.description'),
       icon: <SettingsIcon />,
       iconColor: 'gray' as const,
       href: `${appPath}/settings`,
@@ -162,13 +162,13 @@ function Dashboard(props) {
               rel="noopener noreferrer"
               className="inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
-              Chat tester
+              {I18n.t('dashboard.chat_tester')}
             </a>
             <Link
               to="/playground"
               className="inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
-              Playground
+              {I18n.t('dashboard.playground')}
             </Link>
           </div>
         </div>
@@ -177,7 +177,7 @@ function Dashboard(props) {
         <div className="mb-12">
           <div className="flex items-center mb-6">
             <h2 className="text-sm font-medium text-gray-500">
-              Configure • {completedCount}/{onboardingSteps.length} steps
+              {I18n.t('dashboard.onboarding.progress', { completed: completedCount, total: onboardingSteps.length })}
             </h2>
           </div>
 
@@ -236,7 +236,7 @@ function Dashboard(props) {
         {/* Go Further Section */}
         <div>
           <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">
-            Go further
+            {I18n.t('dashboard.go_further')}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {furtherCards

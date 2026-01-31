@@ -220,7 +220,7 @@ export class SaveSegmentModal extends Component<SaveSegmentModalType> {
                   onClick={this.secondaryAction.bind(this)}
                   variant={'success'}
                 >
-                  {this.state.action === 'update' ? 'Save' : 'Save New'}
+                  {this.state.action === 'update' ? I18n.t('common.save') : I18n.t('segment_manager.save_new')}
                 </Button>
 
                 <Button
@@ -341,7 +341,7 @@ class SegmentManager extends Component<SegmentManagerType> {
           : I18n.t('segment_manager.any')
       } ${I18n.t('segment_manager.criteria')}`;
     } else {
-      return `Match: ${o.attribute} ${o.comparison ? o.comparison : ''} ${
+      return `${I18n.t('segment_manager.match')}: ${o.attribute} ${o.comparison ? o.comparison : ''} ${
         o.value ? o.value : ''
       }`;
     }

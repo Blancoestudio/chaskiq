@@ -241,7 +241,7 @@ class AppUsers extends Component<AppUsersProps, AppUsersState> {
           />
 
           <SaveSegmentModal
-            title="Save Segment"
+            title={I18n.t('segment_manager.save_segment')}
             segment={this.props.segment}
             savePredicates={this.props.actions.savePredicates}
             predicateCallback={() => {

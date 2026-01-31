@@ -100,6 +100,36 @@ en:
     status_running: Running
     status_paused: Paused
     guides: Chaskiq Guides
+    onboarding:
+      steps:
+        channels:
+          title: Configure channels to communicate with your customers
+          description: Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.
+          action: Configure channels
+        team:
+          title: Invite your team members to collaborate faster
+          description: Add team members to help respond to customers and manage conversations.
+          action: Invite team
+        content:
+          title: Add content to power your AI and help center
+          description: Create articles and knowledge base content to help customers self-serve.
+          action: Create content
+      progress: Configure • %{completed}/%{total} steps
+    cards:
+      reports:
+        title: Reports & Analytics
+        description: Track metrics and understand how your team is performing.
+      campaigns:
+        title: Campaigns
+        description: Send targeted messages to your customers.
+      settings:
+        title: App Settings
+        description: Configure your workspace settings.
+      messenger:
+        description: Configure your chat widget
+    go_further: Go further
+    chat_tester: Chat tester
+    playground: Playground
   navigator:
     dashboard: Dashboard
     platform: Platform
@@ -108,6 +138,9 @@ en:
     routing_bots: Routing Bots
     help_center: Help Center
     settings: Settings
+    channels: Channels
+    reports: Reports
+    tags: Tags
     childs:
       conversations: Conversations
       conversations_new: Compose
@@ -130,7 +163,13 @@ en:
       integrations: Integrations
       webhooks: Webhooks
       api_access: API Access
+      webhooks: Webhooks
+      api_access: API Access
       billing: Billing
+      all_users: All Users
+      companies: Companies
+      imports: Import
+      bot: Bot
     user_menu:
       create_app: Create New App
       create_app_description: Create your company’s Chaskiq app
@@ -767,6 +806,7 @@ en:
     more_than_eq: more than eq
     match_any: match any
     match_all: match all
+    save_new: Save New
     missing_value: Missing value!
   full_contact:
     inbox:

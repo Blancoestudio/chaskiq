@@ -58,26 +58,26 @@ function IntercomSidebar({ app, navigation, current_user, drawer, location }) {
                     },
                     {
                         id: 'conversations-filters',
-                        title: 'Conversaciones',
+                        title: I18n.t('navigator.childs.conversations'),
                         collapsible: true,
                         defaultOpen: true,
                         items: [
-                            { id: 'all-conversations', label: 'Todas las conve...', href: `${appPath}/conversations`, badge: 0 },
-                            { id: 'not-assigned', label: 'No Asignado', href: `${appPath}/conversations?filter=unassigned`, badge: 0 },
-                            { id: 'assigned-to-me', label: 'Assigned to me', href: `${appPath}/conversations?filter=mine`, badge: 0 },
-                            { id: 'bot', label: 'chaskiq bot', href: `${appPath}/conversations?filter=bot`, badge: 0 },
+                            { id: 'all-conversations', label: I18n.t('conversations.menu.all'), href: `${appPath}/conversations`, badge: 0 },
+                            { id: 'not-assigned', label: I18n.t('conversations.menu.unassigned'), href: `${appPath}/conversations?filter=unassigned`, badge: 0 },
+                            { id: 'assigned-to-me', label: I18n.t('conversations.menu.assigned_to_me'), href: `${appPath}/conversations?filter=mine`, badge: 0 },
+                            { id: 'bot', label: 'Chaskiq Bot', href: `${appPath}/conversations?filter=bot`, badge: 0 },
                         ],
                     },
                     {
                         id: 'channels',
-                        title: 'Channels',
+                        title: I18n.t('navigator.channels'),
                         collapsible: true,
                         defaultOpen: false,
                         items: [],
                     },
                     {
                         id: 'tags',
-                        title: 'Etiquetas',
+                        title: I18n.t('navigator.tags'),
                         collapsible: true,
                         defaultOpen: false,
                         items: [],
@@ -99,10 +99,10 @@ function IntercomSidebar({ app, navigation, current_user, drawer, location }) {
                         id: 'platform',
                         title: '',
                         items: [
-                            { id: 'all-users', label: 'All Users', href: `${appPath}/segments`, badge: 0 },
+                            { id: 'all-users', label: I18n.t('navigator.childs.all_users'), href: `${appPath}/segments`, badge: 0 },
                             ...segmentItems,
-                            { id: 'companies', label: 'Empresas', href: `${appPath}/companies`, icon: <PlatformIcon /> },
-                            { id: 'imports', label: 'Importar', href: `${appPath}/imports`, icon: <WriteIcon /> },
+                            { id: 'companies', label: I18n.t('navigator.childs.companies'), href: `${appPath}/companies`, icon: <PlatformIcon /> },
+                            { id: 'imports', label: I18n.t('navigator.childs.imports'), href: `${appPath}/imports`, icon: <WriteIcon /> },
                         ],
                     },
                 ];
@@ -169,13 +169,13 @@ function IntercomSidebar({ app, navigation, current_user, drawer, location }) {
 
     const getSectionTitle = () => {
         switch (current_section) {
-            case 'Dashboard': return 'Dashboard';
+            case 'Dashboard': return I18n.t('navigator.dashboard');
             case 'Platform': return I18n.t('navigator.platform');
-            case 'Conversations': return 'Inbox';
+            case 'Conversations': return I18n.t('navigator.childs.conversations');
             case 'Campaigns': return I18n.t('navigator.campaigns');
             case 'Bot': return I18n.t('navigator.routing_bots');
             case 'HelpCenter': return I18n.t('navigator.help_center');
-            case 'Reports': return 'Reports';
+            case 'Reports': return I18n.t('navigator.reports');
             case 'Settings': return I18n.t('navigator.settings');
             default: return app.name;
         }

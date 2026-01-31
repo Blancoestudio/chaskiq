@@ -8,6 +8,8 @@ import PageHeader from '@chaskiq/components/src/components/PageHeader';
 import Content from '@chaskiq/components/src/components/Content';
 import ContactManager from '@chaskiq/components/src/components/ContactManager';
 
+import I18n from '../shared/FakeI18n';
+
 import {
   setCurrentPage,
   setCurrentSection,
@@ -65,7 +67,7 @@ function Platform({ dispatch, match, app, app_users, segment }) {
       dispatch(
         dispatchSegmentUpdate({
           id: 'all',
-          name: 'All Users',
+          name: I18n.t('navigator.childs.all_users'),
           predicates: [],
           jwt: null,
         })

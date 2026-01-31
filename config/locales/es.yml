@@ -100,6 +100,36 @@ es:
     status_running: Funcionando
     status_paused: Pausado
     guides: Guías de Chaskiq
+    onboarding:
+      steps:
+        channels:
+          title: Configura canales para comunicarte con tus clientes
+          description: Gestiona conversaciones en todos los canales: Messenger, email, WhatsApp, SMS y redes sociales.
+          action: Configurar canales
+        team:
+          title: Invita a tu equipo a colaborar más rápido
+          description: Agrega miembros del equipo para ayudar a responder a los clientes y gestionar conversaciones.
+          action: Invitar equipo
+        content:
+          title: Agrega contenido para potenciar tu IA y centro de ayuda
+          description: Crea artículos y contenido de base de conocimiento para ayudar a los clientes a auto-atenderse.
+          action: Crear contenido
+      progress: Configurar • %{completed}/%{total} pasos
+    cards:
+      reports:
+        title: Reportes y Analíticas
+        description: Rastrea métricas y entiende cómo se desempeña tu equipo.
+      campaigns:
+        title: Campañas
+        description: Envía mensajes dirigidos a tus clientes.
+      settings:
+        title: Configuración de la App
+        description: Configura los ajustes de tu espacio de trabajo.
+      messenger:
+        description: Configura tu widget de chat
+    go_further: Ir más lejos
+    chat_tester: Probar chat
+    playground: Área de pruebas
   navigator:
     dashboard: Panel de Control
     platform: Plataforma
@@ -108,6 +138,8 @@ es:
     routing_bots: Rutting Bots
     help_center: Centro de ayuda
     settings: Ajustes
+    channels: Canales
+    reports: Reportes
     childs:
       conversations: Conversaciones
       conversations_new: Compose
@@ -130,7 +162,13 @@ es:
       integrations: Integraciones
       webhooks: Webhooks
       api_access: Acceso a API
+      webhooks: Webhooks
+      api_access: Acceso a API
       billing: Facturación
+      all_users: Todos los Usuarios
+      companies: Empresas
+      imports: Importar
+      bot: Bot
     user_menu:
       create_app: Crear una nueva aplicación
       create_app_description: Crea la aplicación Chaskiq de tu empresa
@@ -767,6 +805,7 @@ es:
     more_than_eq: mayor o igual que
     match_any: coincidir cualquiera
     match_all: coincidir todo
+    save_new: Guardar Nuevo
     missing_value: Falta el valor!
   full_contact:
     inbox:

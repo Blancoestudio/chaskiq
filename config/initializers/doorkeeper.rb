@@ -15,6 +15,7 @@ Doorkeeper.configure do
     #   #   User.find_by(id: session[:user_id]) || redirect_to(new_user_session_url)
     warden.authenticate!(scope: :agent) or raise 'not authorized'
   end
+
   resource_owner_from_credentials do |_routes|
     user = Agent.find_for_database_authentication(email: params[:email] || params[:username])
     user if user && user.valid_for_authentication? { user.valid_password?(params[:password]) }
@@ -38,7 +39,7 @@ Doorkeeper.configure do
 
   access_token_expires_in Chaskiq::Config.fetch("USER_TOKEN_EXPIRES_IN", 1.hour ).to_i
 
-  # skip_client_authentication_for_password_grant true
+  skip_client_authentication_for_password_grant true
 
   # custom_access_token_expires_in do |context|
   #  # context.grant_type for grant_type, context.client for client, context.scopes for scopes

@@ -9,18 +9,18 @@ interface ButtonProps {
   color?: string;
   'aria-label'?: any;
   variant?:
-    | 'success'
-    | 'flat'
-    | 'flat-dark'
-    | 'main'
-    | 'link'
-    | 'clean'
-    | 'outlined'
-    | 'contained'
-    | 'outlined-transparent'
-    | 'icon'
-    | 'danger'
-    | 'text';
+  | 'success'
+  | 'flat'
+  | 'flat-dark'
+  | 'main'
+  | 'link'
+  | 'clean'
+  | 'outlined'
+  | 'contained'
+  | 'outlined-transparent'
+  | 'icon'
+  | 'danger'
+  | 'text';
   size?: string;
   border?: boolean;
   disabled?: boolean;
@@ -33,15 +33,12 @@ const BaseButton = styled.button<ButtonProps>`
       case 'success':
         return tw`
         outline-none 
-        rounded-md 
-        bg-green-400 
-        text-green-100
-        dark:text-gray-100
-        dark:bg-green-500
-        dark:hover:bg-green-400 
-        hover:bg-green-500 
+        rounded-full 
+        bg-green-600 
+        text-white
+        dark:text-white
+        hover:bg-green-700 
         focus:outline-none 
-        focus:border-green-700 
         focus:shadow-outline
 
         transition 
@@ -60,7 +57,7 @@ const BaseButton = styled.button<ButtonProps>`
         border-transparent 
         text-xs 
         font-medium 
-        rounded 
+        rounded-md 
         text-indigo-700 
         bg-indigo-100 
         hover:bg-indigo-200 
@@ -96,7 +93,7 @@ const BaseButton = styled.button<ButtonProps>`
         items-center 
         border 
         border-transparent 
-        rounded-md 
+        rounded-pill 
         text-white bg-indigo-600 
         hover:bg-indigo-500 
         focus:outline-none 
@@ -121,8 +118,9 @@ const BaseButton = styled.button<ButtonProps>`
         text-sm 
         font-medium 
         rounded-md 
-        text-gray-700
-        bg-white 
+        text-text-default
+        bg-base-module 
+        border-neutral-border
         hover:bg-gray-50
         dark:bg-gray-800
         dark:hover:bg-gray-700
@@ -221,7 +219,7 @@ const BaseButton = styled.button<ButtonProps>`
   }}
 `;
 
-const SizeButton = styled(BaseButton)<ButtonProps>`
+const SizeButton = styled(BaseButton) <ButtonProps>`
   ${({ size, variant }) => {
     switch (size) {
       case 'xs':

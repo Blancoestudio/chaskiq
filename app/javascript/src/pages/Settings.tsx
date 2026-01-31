@@ -1,9 +1,10 @@
 import React from 'react';
-import { withRouter, Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import I18n from '../shared/FakeI18n';
 
 import Content from '@chaskiq/components/src/components/Content';
+import SettingsCard from '@chaskiq/components/src/components/SettingsCard';
 
 import {
   setCurrentPage,
@@ -12,8 +13,21 @@ import {
 
 import settingsItems from '../layout/settingsItems';
 
+// Color mapping for different setting types
+const iconColors: Record<string, 'pink' | 'purple' | 'yellow' | 'green' | 'blue' | 'orange' | 'teal' | 'gray'> = {
+  app_settings: 'purple',
+  security: 'yellow',
+  team: 'blue',
+  integrations: 'green',
+  webhooks: 'orange',
+  api: 'teal',
+  billing: 'pink',
+  messenger: 'blue',
+};
+
 function AppSettingsContainer({ app, dispatch }) {
   const items = settingsItems(app, () => false).filter((o) => o.allowed);
+
   React.useEffect(() => {
     dispatch(setCurrentPage('app_settings'));
     dispatch(setCurrentSection('Settings'));
@@ -22,51 +36,33 @@ function AppSettingsContainer({ app, dispatch }) {
   return (
     <Content>
       {app && (
-        <React.Fragment>
-          <div>
-            <h2 className="text-lg font-medium text-gray-900 dark:text-white">
+        <div className="max-w-5xl mx-auto py-8 px-4">
+          {/* Header */}
+          <div className="mb-8">
+            <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
               {I18n.t('settings.app.app_settings')}
-            </h2>
-            <p className="mt-1 text-sm text-gray-500">
-              {/* some subtitle here? */}
+            </h1>
+            <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+              Manage your workspace settings
             </p>
-            <ul
-              role="list"
-              className="mt-6 border-t border-b border-gray-200 dark:border-black py-6 grid grid-cols-1 gap-6 sm:grid-cols-2"
-            >
-              {items.map((item) => (
-                <SettingLinkItem
-                  item={item}
-                  key={`settings-item-${item.url}`}
-                />
-              ))}
-            </ul>
           </div>
-        </React.Fragment>
+
+          {/* Settings Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {items.map((item) => (
+              <SettingsCard
+                key={`settings-item-${item.url}`}
+                title={item.label}
+                description={item.description || ''}
+                icon={item.icon}
+                iconColor={iconColors[item.id] || 'gray'}
+                href={item.url}
+              />
+            ))}
+          </div>
+        </div>
       )}
     </Content>
-  );
-}
-
-function SettingLinkItem({ item }) {
-  return (
-    <li className="flow-root">
-      <div className="relative -m-2 p-2 flex items-center space-x-4 rounded-xl hover:bg-gray-50 dark:hover:bg-black focus-within:ring-2 focus-within:ring-indigo-500">
-        <div className="text-white dark:text-black flex-shrink-0 flex items-center justify-center h-16 w-16 rounded-lg bg-black dark:bg-white">
-          {item.icon}
-        </div>
-        <div>
-          <h3 className="text-sm font-medium text-gray-900 dark:text-gray-100">
-            <Link to={item.url} className="focus:outline-none">
-              <span className="absolute inset-0" aria-hidden="true"></span>
-              {item.label}
-              <span aria-hidden="true"> &rarr;</span>
-            </Link>
-          </h3>
-          <p className="mt-1 text-sm text-gray-500 dark:bg-gray-100"></p>
-        </div>
-      </div>
-    </li>
   );
 }
 

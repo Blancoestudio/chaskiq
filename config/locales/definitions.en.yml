@@ -73,6 +73,8 @@ en:
       register_visits:
         label: Register Visits
         hint: "Even if this is disabled we will collect global counter of visits and store the last visit information on visitor's profile"
+      default_lang:
+        label: Default Language
       languages:
         select_lang: Select language
     campaigns:

@@ -15,7 +15,7 @@ export default function Card({
 }: CardType) {
   const classes = className
     ? className
-    : 'rounded overflow-hidden shadow-lg bg-white h-full';
+    : 'rounded-md overflow-hidden shadow-sm bg-base-module border border-neutral-border h-full';
   return (
     <div className={classes}>
       {imageSrc && (
@@ -25,7 +25,7 @@ export default function Card({
       <div className="px-6 py-4">
         {title && <div className="font-bold text-xl mb-2">{title}</div>}
         {description && (
-          <p className="text-gray-700 dark:text-gray-300 text-base">
+          <p className="text-text-muted dark:text-gray-300 text-base">
             {description}
           </p>
         )}

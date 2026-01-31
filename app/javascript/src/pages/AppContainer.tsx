@@ -44,7 +44,7 @@ import RestrictedArea, {
 
 import Notifications from '@chaskiq/components/src/components/notifications';
 
-import Sidebar from '../layout/sidebar';
+import Sidebar from '../layout/IntercomSidebar';
 import PackageSlider from '../pages/conversations/packageSlider';
 
 import {
@@ -160,7 +160,8 @@ function AppContainer({
       )}
 
       <div
-        className={` m-generalTop h-generalHeight flex overflow-hidden bg-white dark:bg-gray-900 dark:text-white`}
+        className="m-generalTop h-generalHeight flex overflow-hidden dark:text-white"
+        style={{ backgroundColor: '#eff0eb' }}
       >
         {app && <Sidebar />}
 
@@ -225,6 +226,24 @@ function AppContainer({
                   </Route>
 
                   <Route exact path={`${match.path}/segments/:segmentID/:Jwt?`}>
+                    <RestrictedArea section="segments">
+                      <Platform />
+                    </RestrictedArea>
+                  </Route>
+
+                  <Route exact path={`${match.path}/segments`}>
+                    <RestrictedArea section="segments">
+                      <Platform />
+                    </RestrictedArea>
+                  </Route>
+
+                  <Route exact path={`${match.path}/companies`}>
+                    <RestrictedArea section="segments">
+                      <Platform />
+                    </RestrictedArea>
+                  </Route>
+
+                  <Route exact path={`${match.path}/imports`}>
                     <RestrictedArea section="segments">
                       <Platform />
                     </RestrictedArea>

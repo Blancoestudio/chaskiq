@@ -32,9 +32,13 @@ module Types
       argument :lang, String, required: false, default_value: nil
     end
 
-    def help_center(domain:, lang:)
+    def help_center(domain:, lang: nil)
       helpcenter = ArticleSetting.find_by(subdomain: domain)
-      I18n.locale = lang || helpcenter.default_lang
+      if lang.present? && I18n.available_locales.map(&:to_s).include?(lang)
+        I18n.locale = lang
+      else
+        I18n.locale = helpcenter&.default_lang || I18n.default_locale
+      end
       helpcenter
     end
 

@@ -232,6 +232,8 @@ es:
         passive: Pasiva
     settings:
       locale: Configuración regional
+      default_lang:
+        label: Idioma por defecto
       greetings: Saludos
       intro: Introducción
       tagline: Eslogan

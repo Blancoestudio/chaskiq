@@ -99,10 +99,10 @@ const WrappedComponent = React.forwardRef(function Input(
         return `border-dashed border-b-2 border-gray-400 
                 w-full py-2 px-3 text-gray-700 focus:outline-none focus:border-gray-600 dark:bg-gray-900 dark:text-white`;
       default:
-        return `shadow appearance-none border border-${borderColor(error)}-300 
-        dark:border-${borderColor(error)}-700
-         rounded w-full py-2 px-3 text-gray-700 dark:bg-gray-900 dark:border-gray-700 dark:text-white
-        leading-tight focus:outline-none focus:shadow-outline`;
+        return `shadow-sm appearance-none border border-neutral-border 
+        dark:border-neutral-border
+         rounded-sm w-full py-2 px-3 text-text-default dark:bg-base-module dark:text-white
+        leading-tight focus:outline-none focus:ring-2 focus:ring-neutral-border-emphasis focus:border-transparent transition-shadow duration-200`;
     }
   }
 
@@ -169,8 +169,8 @@ const WrappedComponent = React.forwardRef(function Input(
         ? defaultValue.map((o) => ({ label: o, value: o }))
         : defaultValue
       : props.options.find(
-          (o) => o.value == (defaultValue?.value || defaultValue)
-        );
+        (o) => o.value == (defaultValue?.value || defaultValue)
+      );
 
     return (
       <FormField name={name} label={label} helperText={helperText}>
@@ -348,7 +348,7 @@ const WrappedComponent = React.forwardRef(function Input(
             borderRadius: 4,
             colors: {
               ...selectTheme.colors,
-              ...themeForSelect(),
+              ...themeForSelect(theme),
             },
           })}
         />

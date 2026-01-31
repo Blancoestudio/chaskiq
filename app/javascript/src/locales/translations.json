@@ -12909,6 +12909,9 @@
           "hint": "When this is activate the messenger web widget will be activated",
           "label": "Activate messenger"
         },
+        "default_lang": {
+          "label": "Default Language"
+        },
         "domain": {
           "hint": "This will be the host site were chaskiq will be used",
           "label": "Domain URL"
@@ -14711,6 +14714,9 @@
         }
       },
       "settings": {
+        "default_lang": {
+          "label": "Idioma por defecto"
+        },
         "greetings": "Saludos",
         "intro": "Introducción",
         "locale": "Configuración regional",

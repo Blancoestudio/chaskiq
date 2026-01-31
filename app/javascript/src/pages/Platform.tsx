@@ -49,7 +49,7 @@ function Platform({ dispatch, match, app, app_users, segment }) {
       page: page || 1,
     };
 
-    dispatch(searchAppUsers(options, () => {}));
+    dispatch(searchAppUsers(options, () => { }));
   };
 
   const fetchApp = () => {
@@ -60,6 +60,20 @@ function Platform({ dispatch, match, app, app_users, segment }) {
 
   const getSegment = () => {
     const segmentID = match.params.segmentID;
+
+    if (!segmentID || segmentID === 'all') {
+      dispatch(
+        dispatchSegmentUpdate({
+          id: 'all',
+          name: 'All Users',
+          predicates: [],
+          jwt: null,
+        })
+      );
+      search();
+      return;
+    }
+
     return segmentID ? fetchAppSegmentDispatch(segmentID) : null;
   };
 
@@ -160,8 +174,8 @@ function Platform({ dispatch, match, app, app_users, segment }) {
             savePredicates: savePredicates,
             deletePredicate: deletePredicateD,
           }}
-          // history={props.history}
-          // actions={this.actions()}
+        // history={props.history}
+        // actions={this.actions()}
         />
       </div>
     </Content>

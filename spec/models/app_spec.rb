@@ -9,6 +9,13 @@ RSpec.describe App, type: :model do
   # it{ should have_many(:roles) }
   # it{ should have_many(:admin_users).through(:roles) }
 
+  it "stores default_lang" do
+    app = FactoryBot.build(:app)
+    app.default_lang = "es"
+    app.save
+    expect(app.reload.default_lang).to eq("es")
+  end
+
   let(:app) do
     FactoryBot.create :app
   end

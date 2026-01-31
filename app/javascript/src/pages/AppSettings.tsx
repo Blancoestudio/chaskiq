@@ -9,6 +9,7 @@ import UserData from './settings/UserDataFields';
 import VerificationView from './settings/VerificationView';
 import ContactAvatars from './settings/ContactAvatars';
 import timezones from '../shared/timezones';
+import langsOptions from '../shared/langsOptions';
 import I18n from '../shared/FakeI18n';
 
 import graphql from '@chaskiq/store/src/graphql/client';
@@ -157,6 +158,15 @@ class AppSettingsContainer extends Component<
         label: I18n.t('definitions.settings.tagline.label'),
         type: 'text',
         hint: I18n.t('definitions.settings.tagline.hint'),
+        grid: { xs: 'w-full', sm: 'w-1/2' },
+      },
+
+      {
+        name: 'defaultLang',
+        type: 'select',
+        label: I18n.t('definitions.settings.default_lang.label'),
+        options: langsOptions,
+        multiple: false,
         grid: { xs: 'w-full', sm: 'w-1/2' },
       },
 

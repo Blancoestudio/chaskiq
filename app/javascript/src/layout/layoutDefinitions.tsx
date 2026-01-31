@@ -18,7 +18,7 @@ export default function definitions() {
     companyLogo: icon,
     verticalSidebar: {
       display: true,
-      itemClass: `text-gray-700 dark:text-white rounded-md flex  justify-center  cursor-pointer bg-gray-50 dark:bg-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800  h-10 w-full  items-center  text-2xl font-semibold  my-5 overflow-hidden`,
+      itemClass: `text-gray-500 dark:text-white rounded-xl flex justify-center cursor-pointer bg-transparent hover:bg-gray-100 dark:bg-gray-900 dark:hover:bg-gray-800 h-10 w-full items-center text-xl font-medium my-3 overflow-hidden transition-all duration-200`,
       displayLabel: false,
       displayTooltip: true,
     },
@@ -97,9 +97,8 @@ export default function definitions() {
           id: 'Platform',
           label: I18n.t('navigator.platform'),
           icon: <PlatformIcon />,
-          url: `/apps/${app.key}/segments/${
-            app.segments.length > 0 ? app.segments[0].id : ''
-          }`,
+          url: `/apps/${app.key}/segments/${app.segments.length > 0 ? app.segments[0].id : ''
+            }`,
           allowed: allowedAccessTo(app, 'segments'),
         },
         {
@@ -175,28 +174,28 @@ export default function definitions() {
     mainSidebar: {
       displaySectionTitle: true,
       buttons: {
-        activeClass: `text-brand hover:text-brand bg-gray-200 dark:bg-gray-900`,
+        activeClass: `text-gray-900 font-semibold bg-gray-200 dark:bg-gray-800 rounded-xl`,
         defaultClass: `
-        hover:text-gray-600 
+        hover:text-gray-900 
         hover:bg-gray-100
         dark:bg-gray-900
-        dark:hover:bg-900
+        dark:hover:bg-gray-800
         dark:hover:text-gray-300 
         dark:text-gray-100
         dark:focus:bg-black
         focus:bg-gray-100
-        bg-gray-50
+        bg-transparent
         focus:outline-none 
         group 
         flex 
         items-center 
-        px-2 
-        py-2 
-        mb-2
+        px-3 
+        py-2.5 
+        mb-1
         text-sm leading-5 
         font-medium 
-        text-gray-900 
-        rounded-md transition ease-in-out duration-150`,
+        text-gray-600
+        rounded-xl transition-all duration-200`,
       },
     },
   };

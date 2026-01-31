@@ -52,6 +52,7 @@ class App < ApplicationRecord
 
     sorted_agents
     flagged
+    default_lang
   ]
 
   include InboundAddress
@@ -178,6 +179,13 @@ class App < ApplicationRecord
         name: "theme",
         type: "select",
         options: %w[dark light],
+        grid: { xs: "w-full", sm: "w-1/2" }
+      },
+
+      {
+        name: "defaultLang",
+        type: "select",
+        options: I18n.available_locales,
         grid: { xs: "w-full", sm: "w-1/2" }
       },
 

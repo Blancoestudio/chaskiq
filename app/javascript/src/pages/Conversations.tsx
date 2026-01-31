@@ -217,7 +217,7 @@ function Conversations({
 
     return (
       <React.Fragment>
-        <div className="items-center bg-white dark:bg-gray-900 px-3 py-4 border-b border-gray-200 dark:border-gray-800 sm:px-3 flex justify-between">
+        <div className="items-center bg-white dark:bg-gray-900 px-3 py-4 sm:px-3 flex justify-between" style={{ borderBottom: '1px solid var(--neutral-border)' }}>
           <FilterMenu
             options={filters}
             value={conversations.filter}
@@ -258,7 +258,8 @@ function Conversations({
         </div>
 
         <div
-          className="overflow-scroll h-generalHeight"
+          className="overflow-scroll"
+          style={{ height: 'calc(100% - 64px)' }}
           onScroll={handleScroll}
         >
           {conversations.collection.map((o) => {
@@ -297,89 +298,121 @@ function Conversations({
   };
 
   return (
-    <div className="flex">
-      <Switch>
-        <Route exact path={`/apps/${app.key}/conversations`}>
-          <div className={'w-full md:w-1/4 h-screen md:border-r sm:hidden'}>
-            {renderConversations()}
-          </div>
-        </Route>
-      </Switch>
-
+    <div
+      className="flex"
+      style={{
+        padding: '12px',
+        paddingLeft: '0',
+        height: '100%',
+      }}
+    >
       <div
-        className={
-          'w-full md:w-4/12 h-screen md:border-r hidden sm:block border-gray-200 dark:border-gray-900'
-        }
+        className="flex flex-1 overflow-hidden"
+        style={{
+          backgroundColor: '#ffffff',
+          borderRadius: '16px',
+          boxShadow: '0px 1px 8px 0px rgba(0, 0, 0, 0.08), 0px 0px 0px 1px rgba(0, 0, 0, 0.04)',
+        }}
       >
-        {renderConversations()}
-      </div>
+        <Switch>
+          <Route exact path={`/apps/${app.key}/conversations`}>
+            <div
+              className={'w-full md:w-1/4 h-full sm:hidden overflow-hidden'}
+              style={{
+                borderRight: '1px solid #e9eae6',
+                borderTopLeftRadius: '16px',
+                borderBottomLeftRadius: '16px'
+              }}
+            >
+              {renderConversations()}
+            </div>
+          </Route>
+        </Switch>
 
-      <Switch>
-        <Route exact path={`/apps/${app.key}/conversations`}>
-          <div className="hidden sm:block flex-grow bg-gray-50 dark:bg-gray-800 h-screen border-r-0 w-1/12">
-            <EmptyView
-              title={I18n.t('conversations.empty.title')}
-              shadowless
-              image={
-                <img
-                  src={emptyImage}
-                  className="h-56 w-56"
-                  alt={I18n.t('conversations.empty.title')}
-                />
-              }
-              subtitle={I18n.t('conversations.empty.text')}
-            />
-          </div>
-        </Route>
-
-        <Route exact path={`/apps/${app.key}/conversations/assignment_rules`}>
-          <div className="flex-grow h-screen border-r w-1/12 dark:border-black">
-            <AccessDenied section="assign_rules">
-              <AssignmentRules />
-            </AccessDenied>
-          </div>
-        </Route>
-
-        <Route exact path={`/apps/${app.key}/conversations/:id`}>
-          <div
-            className={`${
-              fixedSidebarOpen ? 'md:w-5/12' : 'md:w-0 md:flex-grow'
-            } w-full bg-gray-200 dark:bg-gray-900 h-screen border-r dark:border-black`}
-          >
-            <Conversation
-              events={events}
-              pushEvent={pushEvent}
-              fixedSidebarOpen={fixedSidebarOpen}
-              setFixedSidebarOpen={setFixedSidebarOpen}
-              toggleFixedSidebar={toggleFixedSidebar}
-            />
-          </div>
-        </Route>
-      </Switch>
-
-      {!isEmpty(conversation) && conversation.id && fixedSidebarOpen && (
-        <div className="bg-gray-100 dark:bg-gray-900 h-screen overflow-scroll fixed sm:relative right-0 sm:block sm:w-4/12 ">
-          {app_user && app_user.id ? (
-            <ConversationSidebar toggleFixedSidebar={toggleFixedSidebar} />
-          ) : (
-            <Progress />
-          )}
+        <div
+          className={'w-full md:w-4/12 h-full hidden sm:block overflow-hidden'}
+          style={{
+            borderRight: '1px solid #e9eae6',
+            borderTopLeftRadius: '16px',
+            borderBottomLeftRadius: '16px'
+          }}
+        >
+          {renderConversations()}
         </div>
-      )}
 
-      {conversation && !conversation.id && fixedSidebarOpen && (
-        <div className="bg-gray-100 dark:bg-gray-900 h-screen overflow-scroll fixed sm:relative right-0 sm:block sm:w-4/12 ">
-          <div className="m-2">
-            {conversation.mainParticipant ? (
-              <AppUserEdit />
+        <Switch>
+          <Route exact path={`/apps/${app.key}/conversations`}>
+            <div
+              className="hidden sm:block flex-grow h-full w-1/12 overflow-hidden"
+              style={{
+                backgroundColor: '#ffffff',
+                borderTopRightRadius: '16px',
+                borderBottomRightRadius: '16px'
+              }}
+            >
+              <EmptyView
+                title={I18n.t('conversations.empty.title')}
+                shadowless
+                image={
+                  <img
+                    src={emptyImage}
+                    className="h-56 w-56"
+                    alt={I18n.t('conversations.empty.title')}
+                  />
+                }
+                subtitle={I18n.t('conversations.empty.text')}
+              />
+            </div>
+          </Route>
+
+          <Route exact path={`/apps/${app.key}/conversations/assignment_rules`}>
+            <div className="flex-grow h-full border-r w-1/12 dark:border-gray-800">
+              <AccessDenied section="assign_rules">
+                <AssignmentRules />
+              </AccessDenied>
+            </div>
+          </Route>
+
+          <Route exact path={`/apps/${app.key}/conversations/:id`}>
+            <div
+              className={`${fixedSidebarOpen ? 'md:w-5/12' : 'md:w-0 md:flex-grow'
+                } w-full bg-gray-100 dark:bg-gray-900 h-full border-r dark:border-gray-800`}
+            >
+              <Conversation
+                events={events}
+                pushEvent={pushEvent}
+                fixedSidebarOpen={fixedSidebarOpen}
+                setFixedSidebarOpen={setFixedSidebarOpen}
+                toggleFixedSidebar={toggleFixedSidebar}
+              />
+            </div>
+          </Route>
+        </Switch>
+
+        {!isEmpty(conversation) && conversation.id && fixedSidebarOpen && (
+          <div className="bg-gray-100 dark:bg-gray-900 h-full overflow-scroll fixed sm:relative right-0 sm:block sm:w-4/12 ">
+            {app_user && app_user.id ? (
+              <ConversationSidebar toggleFixedSidebar={toggleFixedSidebar} />
             ) : (
-              <div className="bg-white dark:bg-gray-900 rounded-md border p-4">
-                <p>No recipient selected.</p>
-              </div>
+              <Progress />
             )}
           </div>
-        </div>
-      )}
+        )}
+
+        {conversation && !conversation.id && fixedSidebarOpen && (
+          <div className="bg-gray-100 dark:bg-gray-900 h-full overflow-scroll fixed sm:relative right-0 sm:block sm:w-4/12 ">
+            <div className="m-2">
+              {conversation.mainParticipant ? (
+                <AppUserEdit />
+              ) : (
+                <div className="bg-white dark:bg-gray-900 rounded-md border p-4">
+                  <p>No recipient selected.</p>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

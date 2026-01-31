@@ -109,7 +109,7 @@ class ApiController < ActionController::API
     I18n.locale = begin
       locale
     rescue StandardError
-      I18n.locale
+      I18n.default_locale
     end
   end
 
@@ -121,6 +121,7 @@ class ApiController < ActionController::API
 
     return http_splitted_locale if lang_available?(http_splitted_locale)
     return http_locale if lang_available?(http_locale)
+    return @app.default_lang.to_sym if lang_available?(@app&.default_lang)
 
     nil
   end

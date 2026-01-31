@@ -7,9 +7,8 @@ import { useHistory } from 'react-router-dom';
 import I18n from '../shared/FakeI18n';
 
 import Content from '@chaskiq/components/src/components/Content';
-import PageHeader from '@chaskiq/components/src/components/PageHeader';
-
-import DashboardItem from './reports/ReportItem';
+import IconBadge from '@chaskiq/components/src/components/IconBadge';
+import SettingsCard from '@chaskiq/components/src/components/SettingsCard';
 
 import { escapeHTML } from '@chaskiq/components/src/utils/htmlSanitize';
 
@@ -20,6 +19,9 @@ import {
   HelpCenterIcon,
   AppSettingsIcon,
   ChartsIcons,
+  ChatIcon,
+  MailingIcon,
+  PlatformIcon,
 } from '@chaskiq/components/src/components/icons';
 
 import {
@@ -33,7 +35,7 @@ import { allowedAccessTo } from '@chaskiq/components/src/components/AccessDenied
 export function Home() {
   return (
     <div>
-      <PageHeader title={'Dashboard'} />
+      <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Dashboard</h1>
     </div>
   );
 }
@@ -47,135 +49,212 @@ function Dashboard(props) {
   }, []);
 
   const history = useHistory();
+  const appPath = `/apps/${app.key}`;
 
-  const actions = [
+  // Onboarding steps like Intercom
+  const onboardingSteps = [
     {
-      title: I18n.t('navigator.conversations'),
-      href: `/apps/${app.key}/conversations`,
-      icon: ConversationChatIcon,
-      iconForeground: 'text-sky-700',
-      iconBackground: 'bg-sky-50',
-      allowed: allowedAccessTo(app, 'conversations'),
-      render: () => (
-        <div className="mt-2 text-sm text-gray-500">
-          <span className="truncate--">
-            {I18n.t('dashboard.status')}{' '}
-            {app.activeMessenger && (
-              <Badge size="sm" variant="green">
-                {I18n.t('dashboard.status_running')}
-              </Badge>
-            )}
-            {!app.activeMessenger && (
-              <Badge size="sm" variant="gray">
-                {I18n.t('dashboard.status_paused')}
-              </Badge>
-            )}
-          </span>
-        </div>
-      ),
+      id: 'channels',
+      title: 'Configure channels to communicate with your customers',
+      description: 'Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.',
+      action: 'Configure channels',
+      actionHref: `${appPath}/messenger`,
+      completed: app.activeMessenger,
     },
     {
-      title: 'Reports',
-      href: `/apps/${app.key}/reports`,
-      icon: ChartsIcons,
-      iconForeground: 'text-purple-700',
-      iconBackground: 'bg-purple-50',
-      alowed: allowedAccessTo(app, 'reports'),
+      id: 'team',
+      title: 'Invite your team members to collaborate faster',
+      description: 'Add team members to help respond to customers and manage conversations.',
+      action: 'Invite team',
+      actionHref: `${appPath}/team`,
+      completed: false,
     },
     {
-      title: I18n.t('navigator.childs.messenger_settings'),
-      href: `/apps/${app.key}/messenger`,
-      icon: AppSettingsIcon,
-      iconForeground: 'text-teal-700',
-      iconBackground: 'bg-teal-50',
-      allowed: allowedAccessTo(app, 'messenger_settings'),
-    },
-    {
-      title: I18n.t('navigator.childs.app_settings'),
-      href: `/apps/${app.key}/settings`,
-      icon: SettingsIcon,
-      iconForeground: 'text-teal-700',
-      iconBackground: 'bg-teal-50',
-      allowed: allowedAccessTo(app, 'app_settings'),
-    },
-    {
-      title: I18n.t('navigator.campaigns'),
-      href: `/apps/${app.key}/campaigns`,
-      icon: CampaignsIcon,
-      iconForeground: 'text-sky-700',
-      iconBackground: 'bg-sky-50',
-      allowed: allowedAccessTo(app, 'campaigns'),
-    },
-    {
-      title: I18n.t('dashboard.guides'),
-      externalLink: 'https://dev.chaskiq.io',
-      icon: HelpCenterIcon,
-      iconForeground: 'text-sky-700',
-      iconBackground: 'bg-sky-50',
-      text: I18n.t('navigator.help_center'),
-      allowed: true,
+      id: 'content',
+      title: 'Add content to power your AI and help center',
+      description: 'Create articles and knowledge base content to help customers self-serve.',
+      action: 'Create content',
+      actionHref: `${appPath}/articles`,
+      completed: false,
     },
   ];
 
+  // "Go further" cards
+  // "Go further" cards
+  const furtherCards = [
+    {
+      id: 'conversations',
+      title: I18n.t('conversations.title'),
+      description: I18n.t('dashboard.incoming_messages'),
+      icon: <ConversationChatIcon />,
+      iconColor: 'green' as const,
+      href: `${appPath}/conversations`,
+      allowed: allowedAccessTo(app, 'conversations'),
+    },
+    {
+      id: 'messenger',
+      title: I18n.t('settings.active_messenger.label'), // "Activate messenger" or similar
+      description: 'Configure your chat widget',
+      icon: <PlatformIcon />,
+      iconColor: 'blue' as const,
+      href: `${appPath}/messenger`,
+      allowed: allowedAccessTo(app, 'messenger_settings'),
+    },
+    {
+      id: 'reports',
+      title: 'Reports & Analytics',
+      description: 'Track metrics and understand how your team is performing.',
+      icon: <ChartsIcons />,
+      iconColor: 'purple' as const,
+      href: `${appPath}/reports`,
+      allowed: allowedAccessTo(app, 'reports'),
+    },
+    {
+      id: 'campaigns',
+      title: 'Campaigns',
+      description: 'Send targeted messages to your customers.',
+      icon: <MailingIcon />,
+      iconColor: 'blue' as const,
+      href: `${appPath}/campaigns`,
+      allowed: allowedAccessTo(app, 'campaigns'),
+    },
+    {
+      id: 'settings',
+      title: 'App Settings',
+      description: 'Configure your workspace settings.',
+      icon: <SettingsIcon />,
+      iconColor: 'gray' as const,
+      href: `${appPath}/settings`,
+      allowed: allowedAccessTo(app, 'app_settings'),
+    },
+    {
+      id: 'guides',
+      title: I18n.t('dashboard.guides'),
+      description: I18n.t('articles.help_center'),
+      icon: <HelpCenterIcon />,
+      iconColor: 'yellow' as const,
+      href: `${appPath}/articles`,
+      allowed: allowedAccessTo(app, 'help_center'),
+    },
+  ];
+
+  const completedCount = onboardingSteps.filter(s => s.completed).length;
+
   return (
-    <div>
-      <Content>
-        <div key={'dashboard-hey'} className="space-y-2">
-          <p
-            className="text-4xl leading-2 text-gray-900 dark:text-gray-100 font-bold"
+    <Content>
+      <div className="max-w-4xl mx-auto py-8 px-4">
+        {/* Welcome Header */}
+        {/* Welcome Header */}
+        <div className="flex justify-between items-center mb-8">
+          <h1
+            className="text-3xl font-bold text-gray-900 dark:text-gray-100"
             dangerouslySetInnerHTML={{
               __html: I18n.t('dashboard.hey', {
                 name: escapeHTML(app.name),
               }),
             }}
           />
-
-          <div className="py-3 flex space-x-3 justify-end">
+          <div className="flex space-x-2">
             <WebSetup />
-
-            <LinkButton
-              variant="outlined"
-              onClick={() =>
-                window.open(`/tester/${app.key}`, '_blank').focus()
-              }
-              target="blank"
+            <a
+              href={`/tester/${app.key}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
               Chat tester
-            </LinkButton>
-
-            <LinkButton
-              variant="outlined"
-              onClick={() => history.push('/playground')}
+            </a>
+            <Link
+              to="/playground"
+              className="inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
               Playground
-            </LinkButton>
+            </Link>
           </div>
         </div>
 
-        <div key={'dashboard-status'} className="space-y-2">
-          {/*<div
-            className="mt-1 space-y-1"
-            aria-labelledby="projects-headline"
-          >
-            {app.plan.name && (
-              <Link
-                to={`/apps/${app.key}/billing`}
-                className="group flex items-center py-2 text-sm font-medium text-gray-600 dark:text-gray-100 rounded-md hover:text-gray-900 dark:hover:text-gray-200 hover:bg-gray-50 dark:hover:bg-black"
-              >
-                <span className="truncate">
-                  Plan:{' '}
-                  <Badge size="sm" variant="pink">
-                    {app.plan.name}
-                  </Badge>
-                </span>
-              </Link>
-            )}
-            </div>*/}
+        {/* Onboarding Section */}
+        <div className="mb-12">
+          <div className="flex items-center mb-6">
+            <h2 className="text-sm font-medium text-gray-500">
+              Configure • {completedCount}/{onboardingSteps.length} steps
+            </h2>
+          </div>
 
-          <Example actions={actions.filter((o) => o.allowed)} />
+          <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 overflow-hidden">
+            {onboardingSteps.map((step, index) => (
+              <div
+                key={step.id}
+                className={`flex items-start p-5 ${index !== onboardingSteps.length - 1
+                  ? 'border-b border-gray-100 dark:border-gray-700'
+                  : ''
+                  }`}
+              >
+                {/* Status Circle */}
+                <div className="flex-shrink-0 mr-4">
+                  <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${step.completed
+                    ? 'bg-green-500 border-green-500'
+                    : 'border-gray-300 dark:border-gray-600'
+                    }`}>
+                    {step.completed && (
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    )}
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-sm font-medium text-gray-900 dark:text-gray-100 mb-1">
+                    {step.title}
+                  </h3>
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mb-3">
+                    {step.description}
+                  </p>
+                  {!step.completed && (
+                    <Link
+                      to={step.actionHref}
+                      className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-gray-900 dark:bg-gray-100 dark:text-gray-900 rounded-full hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
+                    >
+                      {step.action}
+                    </Link>
+                  )}
+                </div>
+
+                {/* Arrow */}
+                <div className="flex-shrink-0 ml-4">
+                  <svg className="w-5 h-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-      </Content>
-    </div>
+
+        {/* Go Further Section */}
+        <div>
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">
+            Go further
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {furtherCards
+              .filter((card) => card.allowed !== false)
+              .map((card) => (
+                <SettingsCard
+                  key={card.id}
+                  title={card.title}
+                  description={card.description}
+                  icon={card.icon}
+                  iconColor={card.iconColor}
+                  href={card.href}
+                />
+              ))}
+          </div>
+        </div>
+      </div>
+    </Content>
   );
 }
 
@@ -191,86 +270,3 @@ function mapStateToProps(state) {
 }
 
 export default withRouter(connect(mapStateToProps)(Dashboard));
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
-}
-
-function Example({ actions }) {
-  return (
-    <div className="mt-5 rounded-lg bg-gray-200 dark:bg-gray-900 overflow-hidden shadow divide-y divide-gray-200 dark:divide-gray-600 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px">
-      {actions.map((action, actionIdx) => (
-        <div
-          key={action.title}
-          className={classNames(
-            actionIdx === 0
-              ? 'rounded-tl-lg rounded-tr-lg sm:rounded-tr-none'
-              : '',
-            actionIdx === 1 ? 'sm:rounded-tr-lg' : '',
-            actionIdx === actions.length - 2 ? 'sm:rounded-bl-lg' : '',
-            actionIdx === actions.length - 1
-              ? 'rounded-bl-lg rounded-br-lg sm:rounded-bl-none'
-              : '',
-            'relative group bg-white dark:bg-gray-800 dark:border-gray-900 p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500'
-          )}
-        >
-          <div>
-            {action.icon && (
-              <span
-                className={classNames(
-                  action.iconBackground,
-                  action.iconForeground,
-                  'rounded-lg inline-flex p-3 ring-4 ring-white'
-                )}
-              >
-                <action.icon className="h-6 w-6" aria-hidden="true" />
-              </span>
-            )}
-          </div>
-          <div className="mt-8">
-            <h3 className="text-lg font-medium">
-              {!action.externalLink && (
-                <Link to={action.href} className="focus:outline-none">
-                  {/* Extend touch target to entire panel */}
-                  <span className="absolute inset-0" aria-hidden="true" />
-                  {action.title}
-                </Link>
-              )}
-
-              {action.externalLink && (
-                <a
-                  href={action.externalLink}
-                  rel="noopener noreferrer"
-                  className="focus:outline-none"
-                >
-                  {/* Extend touch target to entire panel */}
-                  <span className="absolute inset-0" aria-hidden="true" />
-                  {action.title}
-                </a>
-              )}
-            </h3>
-
-            {action.render && action.render()}
-
-            {action.text && (
-              <p className="mt-2 text-sm text-gray-500">{action.text}</p>
-            )}
-          </div>
-          <span
-            className="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400"
-            aria-hidden="true"
-          >
-            <svg
-              className="h-6 w-6"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path d="M20 4h1a1 1 0 00-1-1v1zm-1 12a1 1 0 102 0h-2zM8 3a1 1 0 000 2V3zM3.293 19.293a1 1 0 101.414 1.414l-1.414-1.414zM19 4v12h2V4h-2zm1-1H8v2h12V3zm-.707.293l-16 16 1.414 1.414 16-16-1.414-1.414z" />
-            </svg>
-          </span>
-        </div>
-      ))}
-    </div>
-  );
-}

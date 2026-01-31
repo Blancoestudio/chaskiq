@@ -8,21 +8,21 @@ module.exports = {
   mode: 'jit',
   experimental: {},
   //purge: {
-    //enabled: false,
-    //enabled: ['production', 'staging'].includes(process.env.NODE_ENV),
-    content: [
-      './app/**/*.html.erb',
-      './app/**/*.erb',
-      './app/javascript/**/*.scss',
-      './app/helpers/**/*.rb',
-      './app/services/message_apis/**/presenter.rb',
-      './app/javascript/**/*.js',
-      './app/javascript/**/*.jsx',
-      './app/javascript/**/*.ts',
-      './app/javascript/**/*.tsx',
-      './node_modules/rc-tooltip/**/*.js',
-      './node_modules/rc-tooltip/**/*.css',
-    ],
+  //enabled: false,
+  //enabled: ['production', 'staging'].includes(process.env.NODE_ENV),
+  content: [
+    './app/**/*.html.erb',
+    './app/**/*.erb',
+    './app/javascript/**/*.scss',
+    './app/helpers/**/*.rb',
+    './app/services/message_apis/**/presenter.rb',
+    './app/javascript/**/*.js',
+    './app/javascript/**/*.jsx',
+    './app/javascript/**/*.ts',
+    './app/javascript/**/*.tsx',
+    './node_modules/rc-tooltip/**/*.js',
+    './node_modules/rc-tooltip/**/*.css',
+  ],
   //},
   theme: {
     minWidth: {
@@ -64,7 +64,20 @@ module.exports = {
           light: '#67e8f9',
           DEFAULT: '#06b6d4',
           dark: '#0e7490',
-        }
+        },
+        // Intercom Theme Maps
+        'neutral-container': 'var(--neutral-container)',
+        'neutral-container-emphasis': 'var(--neutral-container-emphasis)',
+        'base-module': 'var(--base-module)',
+        'neutral-border': 'var(--neutral-border)',
+        'text-default': 'var(--text-default)',
+        'text-muted': 'var(--text-muted)',
+      },
+      borderRadius: {
+        sm: 'var(--border-radius-small)',
+        md: 'var(--border-radius-medium)',
+        lg: 'var(--border-radius-large)',
+        pill: 'var(--border-radius-full)',
       },
       spacing: {
         px: '1px',

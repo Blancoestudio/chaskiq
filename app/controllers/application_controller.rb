@@ -3,6 +3,7 @@
 class ApplicationController < ActionController::Base
   respond_to :json, :html
   protect_from_forgery unless: -> { request.format.json? }
+  before_action :set_locale
   include PackageIframeBehavior
   # protect_from_forgery with: :null_session
 
@@ -91,6 +92,8 @@ class ApplicationController < ActionController::Base
 
     locale = if lang_available?(http_splitted_locale)
                http_splitted_locale
+             elsif lang_available?(@app&.default_lang)
+               @app.default_lang.to_sym
              else
                I18n.default_locale
              end

@@ -362,47 +362,7 @@
       "user_country": "User Country",
       "user_os": "User OS",
       "users_browser": "Users Browser",
-      "visit_activity": "Visit Activity",
-      "go_further": "Go further",
-      "chat_tester": "Chat tester",
-      "playground": "Playground",
-      "onboarding": {
-        "progress": "Configure • %{completed}/%{total} steps",
-        "steps": {
-          "channels": {
-            "title": "Configure channels to communicate with your customers",
-            "description": "Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.",
-            "action": "Configure channels"
-          },
-          "team": {
-            "title": "Invite your team members to collaborate faster",
-            "description": "Add team members to help respond to customers and manage conversations.",
-            "action": "Invite team"
-          },
-          "content": {
-            "title": "Add content to power your AI and help center",
-            "description": "Create articles and knowledge base content to help customers self-serve.",
-            "action": "Create content"
-          }
-        }
-      },
-      "cards": {
-        "reports": {
-          "title": "Reports & Analytics",
-          "description": "Track metrics and understand how your team is performing."
-        },
-        "campaigns": {
-          "title": "Campaigns",
-          "description": "Send targeted messages to your customers."
-        },
-        "settings": {
-          "title": "App Settings",
-          "description": "Configure your workspace settings."
-        },
-        "messenger": {
-          "description": "Configure your chat widget"
-        }
-      }
+      "visit_activity": "Visit Activity"
     },
     "data_tables": {
       "agents": {
@@ -1194,8 +1154,7 @@
       "save_changes_to": "Save changes to the <b>%{name}</b>{' '} segment.",
       "save_segment": "Save segment",
       "select_fields": "Select fields:",
-      "starts_with": "starts with",
-      "save_new": "Save New"
+      "starts_with": "starts with"
     },
     "settings": {
       "agent_teams": {
@@ -2145,47 +2104,7 @@
       "user_country": "User Country",
       "user_os": "User OS",
       "users_browser": "Users Browser",
-      "visit_activity": "Visit Activity",
-      "go_further": "Go further",
-      "chat_tester": "Chat tester",
-      "playground": "Playground",
-      "onboarding": {
-        "progress": "Configure • %{completed}/%{total} steps",
-        "steps": {
-          "channels": {
-            "title": "Configure channels to communicate with your customers",
-            "description": "Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.",
-            "action": "Configure channels"
-          },
-          "team": {
-            "title": "Invite your team members to collaborate faster",
-            "description": "Add team members to help respond to customers and manage conversations.",
-            "action": "Invite team"
-          },
-          "content": {
-            "title": "Add content to power your AI and help center",
-            "description": "Create articles and knowledge base content to help customers self-serve.",
-            "action": "Create content"
-          }
-        }
-      },
-      "cards": {
-        "reports": {
-          "title": "Reports & Analytics",
-          "description": "Track metrics and understand how your team is performing."
-        },
-        "campaigns": {
-          "title": "Campaigns",
-          "description": "Send targeted messages to your customers."
-        },
-        "settings": {
-          "title": "App Settings",
-          "description": "Configure your workspace settings."
-        },
-        "messenger": {
-          "description": "Configure your chat widget"
-        }
-      }
+      "visit_activity": "Visit Activity"
     },
     "data_tables": {
       "agents": {
@@ -2981,8 +2900,7 @@
       "save_changes_to": "Save changes to the <b>%{name}</b>{' '} segment.",
       "save_segment": "Save segment",
       "select_fields": "Select fields:",
-      "starts_with": "starts with",
-      "save_new": "Save New"
+      "starts_with": "starts with"
     },
     "settings": {
       "agent_teams": {
@@ -3934,47 +3852,7 @@
       "user_country": "User Country",
       "user_os": "User OS",
       "users_browser": "Users Browser",
-      "visit_activity": "Visit Activity",
-      "go_further": "Go further",
-      "chat_tester": "Chat tester",
-      "playground": "Playground",
-      "onboarding": {
-        "progress": "Configure • %{completed}/%{total} steps",
-        "steps": {
-          "channels": {
-            "title": "Configure channels to communicate with your customers",
-            "description": "Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.",
-            "action": "Configure channels"
-          },
-          "team": {
-            "title": "Invite your team members to collaborate faster",
-            "description": "Add team members to help respond to customers and manage conversations.",
-            "action": "Invite team"
-          },
-          "content": {
-            "title": "Add content to power your AI and help center",
-            "description": "Create articles and knowledge base content to help customers self-serve.",
-            "action": "Create content"
-          }
-        }
-      },
-      "cards": {
-        "reports": {
-          "title": "Reports & Analytics",
-          "description": "Track metrics and understand how your team is performing."
-        },
-        "campaigns": {
-          "title": "Campaigns",
-          "description": "Send targeted messages to your customers."
-        },
-        "settings": {
-          "title": "App Settings",
-          "description": "Configure your workspace settings."
-        },
-        "messenger": {
-          "description": "Configure your chat widget"
-        }
-      }
+      "visit_activity": "Visit Activity"
     },
     "data_tables": {
       "agents": {
@@ -4766,8 +4644,7 @@
       "save_changes_to": "Save changes to the <b>%{name}</b>{' '} segment.",
       "save_segment": "Guardar segment",
       "select_fields": "Seleccioneu camps:",
-      "starts_with": "comença amb",
-      "save_new": "Save New"
+      "starts_with": "comença amb"
     },
     "settings": {
       "agent_teams": {
@@ -5717,47 +5594,7 @@
       "user_country": "User Country",
       "user_os": "User OS",
       "users_browser": "Users Browser",
-      "visit_activity": "Visit Activity",
-      "go_further": "Go further",
-      "chat_tester": "Chat tester",
-      "playground": "Playground",
-      "onboarding": {
-        "progress": "Configure • %{completed}/%{total} steps",
-        "steps": {
-          "channels": {
-            "title": "Configure channels to communicate with your customers",
-            "description": "Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.",
-            "action": "Configure channels"
-          },
-          "team": {
-            "title": "Invite your team members to collaborate faster",
-            "description": "Add team members to help respond to customers and manage conversations.",
-            "action": "Invite team"
-          },
-          "content": {
-            "title": "Add content to power your AI and help center",
-            "description": "Create articles and knowledge base content to help customers self-serve.",
-            "action": "Create content"
-          }
-        }
-      },
-      "cards": {
-        "reports": {
-          "title": "Reports & Analytics",
-          "description": "Track metrics and understand how your team is performing."
-        },
-        "campaigns": {
-          "title": "Campaigns",
-          "description": "Send targeted messages to your customers."
-        },
-        "settings": {
-          "title": "App Settings",
-          "description": "Configure your workspace settings."
-        },
-        "messenger": {
-          "description": "Configure your chat widget"
-        }
-      }
+      "visit_activity": "Visit Activity"
     },
     "data_tables": {
       "agents": {
@@ -6551,8 +6388,7 @@
       "save_changes_to": "Save changes to the <b>%{name}</b>{' '} segment.",
       "save_segment": "Save segment",
       "select_fields": "Select fields:",
-      "starts_with": "starts with",
-      "save_new": "Save New"
+      "starts_with": "starts with"
     },
     "settings": {
       "agent_teams": {
@@ -7511,47 +7347,7 @@
       "user_country": "User Country",
       "user_os": "User OS",
       "users_browser": "Users Browser",
-      "visit_activity": "Visit Activity",
-      "go_further": "Go further",
-      "chat_tester": "Chat tester",
-      "playground": "Playground",
-      "onboarding": {
-        "progress": "Configure • %{completed}/%{total} steps",
-        "steps": {
-          "channels": {
-            "title": "Configure channels to communicate with your customers",
-            "description": "Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.",
-            "action": "Configure channels"
-          },
-          "team": {
-            "title": "Invite your team members to collaborate faster",
-            "description": "Add team members to help respond to customers and manage conversations.",
-            "action": "Invite team"
-          },
-          "content": {
-            "title": "Add content to power your AI and help center",
-            "description": "Create articles and knowledge base content to help customers self-serve.",
-            "action": "Create content"
-          }
-        }
-      },
-      "cards": {
-        "reports": {
-          "title": "Reports & Analytics",
-          "description": "Track metrics and understand how your team is performing."
-        },
-        "campaigns": {
-          "title": "Campaigns",
-          "description": "Send targeted messages to your customers."
-        },
-        "settings": {
-          "title": "App Settings",
-          "description": "Configure your workspace settings."
-        },
-        "messenger": {
-          "description": "Configure your chat widget"
-        }
-      }
+      "visit_activity": "Visit Activity"
     },
     "data_tables": {
       "agents": {
@@ -8343,8 +8139,7 @@
       "save_changes_to": "Save changes to the <b>%{name}</b>{' '} segment.",
       "save_segment": "Save segment",
       "select_fields": "Select fields:",
-      "starts_with": "starts with",
-      "save_new": "Save New"
+      "starts_with": "starts with"
     },
     "settings": {
       "agent_teams": {
@@ -9294,47 +9089,7 @@
       "user_country": "User Country",
       "user_os": "User OS",
       "users_browser": "Users Browser",
-      "visit_activity": "Visit Activity",
-      "go_further": "Go further",
-      "chat_tester": "Chat tester",
-      "playground": "Playground",
-      "onboarding": {
-        "progress": "Configure • %{completed}/%{total} steps",
-        "steps": {
-          "channels": {
-            "title": "Configure channels to communicate with your customers",
-            "description": "Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.",
-            "action": "Configure channels"
-          },
-          "team": {
-            "title": "Invite your team members to collaborate faster",
-            "description": "Add team members to help respond to customers and manage conversations.",
-            "action": "Invite team"
-          },
-          "content": {
-            "title": "Add content to power your AI and help center",
-            "description": "Create articles and knowledge base content to help customers self-serve.",
-            "action": "Create content"
-          }
-        }
-      },
-      "cards": {
-        "reports": {
-          "title": "Reports & Analytics",
-          "description": "Track metrics and understand how your team is performing."
-        },
-        "campaigns": {
-          "title": "Campaigns",
-          "description": "Send targeted messages to your customers."
-        },
-        "settings": {
-          "title": "App Settings",
-          "description": "Configure your workspace settings."
-        },
-        "messenger": {
-          "description": "Configure your chat widget"
-        }
-      }
+      "visit_activity": "Visit Activity"
     },
     "data_tables": {
       "agents": {
@@ -10126,8 +9881,7 @@
       "save_changes_to": "Save changes to the <b>%{name}</b>{' '} segment.",
       "save_segment": "Save segment",
       "select_fields": "Select fields:",
-      "starts_with": "starts with",
-      "save_new": "Save New"
+      "starts_with": "starts with"
     },
     "settings": {
       "agent_teams": {
@@ -11077,47 +10831,7 @@
       "user_country": "User Country",
       "user_os": "User OS",
       "users_browser": "Users Browser",
-      "visit_activity": "Visit Activity",
-      "go_further": "Go further",
-      "chat_tester": "Chat tester",
-      "playground": "Playground",
-      "onboarding": {
-        "progress": "Configure • %{completed}/%{total} steps",
-        "steps": {
-          "channels": {
-            "title": "Configure channels to communicate with your customers",
-            "description": "Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.",
-            "action": "Configure channels"
-          },
-          "team": {
-            "title": "Invite your team members to collaborate faster",
-            "description": "Add team members to help respond to customers and manage conversations.",
-            "action": "Invite team"
-          },
-          "content": {
-            "title": "Add content to power your AI and help center",
-            "description": "Create articles and knowledge base content to help customers self-serve.",
-            "action": "Create content"
-          }
-        }
-      },
-      "cards": {
-        "reports": {
-          "title": "Reports & Analytics",
-          "description": "Track metrics and understand how your team is performing."
-        },
-        "campaigns": {
-          "title": "Campaigns",
-          "description": "Send targeted messages to your customers."
-        },
-        "settings": {
-          "title": "App Settings",
-          "description": "Configure your workspace settings."
-        },
-        "messenger": {
-          "description": "Configure your chat widget"
-        }
-      }
+      "visit_activity": "Visit Activity"
     },
     "data_tables": {
       "agents": {
@@ -11909,8 +11623,7 @@
       "save_changes_to": "Save changes to the <b>%{name}</b>{' '} segment.",
       "save_segment": "Save segment",
       "select_fields": "Select fields:",
-      "starts_with": "starts with",
-      "save_new": "Save New"
+      "starts_with": "starts with"
     },
     "settings": {
       "agent_teams": {
@@ -12852,12 +12565,52 @@
       "title": "Conversations"
     },
     "dashboard": {
+      "cards": {
+        "campaigns": {
+          "description": "Send targeted messages to your customers.",
+          "title": "Campaigns"
+        },
+        "messenger": {
+          "description": "Configure your chat widget"
+        },
+        "reports": {
+          "description": "Track metrics and understand how your team is performing.",
+          "title": "Reports & Analytics"
+        },
+        "settings": {
+          "description": "Configure your workspace settings.",
+          "title": "App Settings"
+        }
+      },
+      "chat_tester": "Chat tester",
+      "go_further": "Go further",
       "guides": "Chaskiq Guides",
       "hey": "👋 Hey!, you are viewing the <strong>%{name}'s</strong> dashboard! <br /> Get you installation snippet for the web setup <br />",
       "incoming_messages": "Incoming Messages",
       "lead_os": "Lead OS",
       "mac_os": "Mac OS",
       "new_conversations": "New Conversations",
+      "onboarding": {
+        "progress": "Configure • %{completed}/%{total} steps",
+        "steps": {
+          "channels": {
+            "action": "Configure channels",
+            "description": "Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.",
+            "title": "Configure channels to communicate with your customers"
+          },
+          "content": {
+            "action": "Create content",
+            "description": "Create articles and knowledge base content to help customers self-serve.",
+            "title": "Add content to power your AI and help center"
+          },
+          "team": {
+            "action": "Invite team",
+            "description": "Add team members to help respond to customers and manage conversations.",
+            "title": "Invite your team members to collaborate faster"
+          }
+        }
+      },
+      "playground": "Playground",
       "resolutions": "Resolutions",
       "response_avg": "Average Response Time",
       "snippet": "Put the following script on the end of your html <body> tag",
@@ -12867,47 +12620,7 @@
       "user_country": "User Country",
       "user_os": "User OS",
       "users_browser": "Users Browser",
-      "visit_activity": "Visit Activity",
-      "go_further": "Go further",
-      "chat_tester": "Chat tester",
-      "playground": "Playground",
-      "onboarding": {
-        "progress": "Configure • %{completed}/%{total} steps",
-        "steps": {
-          "channels": {
-            "title": "Configure channels to communicate with your customers",
-            "description": "Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.",
-            "action": "Configure channels"
-          },
-          "team": {
-            "title": "Invite your team members to collaborate faster",
-            "description": "Add team members to help respond to customers and manage conversations.",
-            "action": "Invite team"
-          },
-          "content": {
-            "title": "Add content to power your AI and help center",
-            "description": "Create articles and knowledge base content to help customers self-serve.",
-            "action": "Create content"
-          }
-        }
-      },
-      "cards": {
-        "reports": {
-          "title": "Reports & Analytics",
-          "description": "Track metrics and understand how your team is performing."
-        },
-        "campaigns": {
-          "title": "Campaigns",
-          "description": "Send targeted messages to your customers."
-        },
-        "settings": {
-          "title": "App Settings",
-          "description": "Configure your workspace settings."
-        },
-        "messenger": {
-          "description": "Configure your chat widget"
-        }
-      }
+      "visit_activity": "Visit Activity"
     },
     "data_tables": {
       "agents": {
@@ -13848,7 +13561,7 @@
         "hours": "The team usually responds in a matter of hours",
         "minutes": "The team usually responds in minutes"
       },
-      "runon": "We run on Chaskiq",
+      "runon": "We run on MED360",
       "search_article_title": "Find answers in our article's repository",
       "search_articles": "Search articles",
       "see_previous": "See previous",
@@ -14044,10 +13757,10 @@
       "more_than": "more than",
       "more_than_eq": "more than eq",
       "save_changes_to": "Save changes to the <b>%{name}</b>{' '} segment.",
+      "save_new": "Save New",
       "save_segment": "Save segment",
       "select_fields": "Select fields:",
-      "starts_with": "starts with",
-      "save_new": "Save New"
+      "starts_with": "starts with"
     },
     "settings": {
       "agent_teams": {
@@ -15011,12 +14724,52 @@
       "title": "Conversaciones"
     },
     "dashboard": {
+      "cards": {
+        "campaigns": {
+          "description": "Envía mensajes dirigidos a tus clientes.",
+          "title": "Campañas"
+        },
+        "messenger": {
+          "description": "Configura tu widget de chat"
+        },
+        "reports": {
+          "description": "Rastrea métricas y entiende cómo se desempeña tu equipo.",
+          "title": "Reportes y Analíticas"
+        },
+        "settings": {
+          "description": "Configura los ajustes de tu espacio de trabajo.",
+          "title": "Configuración de la App"
+        }
+      },
+      "chat_tester": "Probar chat",
+      "go_further": "Ir más lejos",
       "guides": "Guías de Chaskiq",
       "hey": "👋 ¡Hola! ¡Estás viendo el panel de control de <strong>%{name}de</strong> ! <br /> Obtén un fragmento de instalación para la configuración web <br />",
       "incoming_messages": "Mensajes nuevos",
       "lead_os": "Leads SO",
       "mac_os": "Mac OS",
       "new_conversations": "Nuevas conversaciones",
+      "onboarding": {
+        "progress": "Configurar • %{completed}/%{total} pasos",
+        "steps": {
+          "channels": {
+            "action": "Configurar canales",
+            "description": "Gestiona conversaciones en todos los canales: Messenger, email, WhatsApp, SMS y redes sociales.",
+            "title": "Configura canales para comunicarte con tus clientes"
+          },
+          "content": {
+            "action": "Crear contenido",
+            "description": "Crea artículos y contenido de base de conocimiento para ayudar a los clientes a auto-atenderse.",
+            "title": "Agrega contenido para potenciar tu IA y centro de ayuda"
+          },
+          "team": {
+            "action": "Invitar equipo",
+            "description": "Agrega miembros del equipo para ayudar a responder a los clientes y gestionar conversaciones.",
+            "title": "Invita a tu equipo a colaborar más rápido"
+          }
+        }
+      },
+      "playground": "Área de pruebas",
       "resolutions": "Resolución",
       "response_avg": "Media del tiempo de respuesta",
       "snippet": "Pon el siguiente script al final de tu etiqueta html <body>",
@@ -15026,47 +14779,7 @@
       "user_country": "País de usuario",
       "user_os": "Usuario OS",
       "users_browser": "Navegador de usuarios",
-      "visit_activity": "Actividad de visita",
-      "go_further": "Ir más lejos",
-      "chat_tester": "Probar chat",
-      "playground": "Área de pruebas",
-      "onboarding": {
-        "progress": "Configurar • %{completed}/%{total} pasos",
-        "steps": {
-          "channels": {
-            "title": "Configura canales para comunicarte con tus clientes",
-            "description": "Gestiona conversaciones en todos los canales: Messenger, email, WhatsApp, SMS y redes sociales.",
-            "action": "Configurar canales"
-          },
-          "team": {
-            "title": "Invita a tu equipo a colaborar más rápido",
-            "description": "Agrega miembros del equipo para ayudar a responder a los clientes y gestionar conversaciones.",
-            "action": "Invitar equipo"
-          },
-          "content": {
-            "title": "Agrega contenido para potenciar tu IA y centro de ayuda",
-            "description": "Crea artículos y contenido de base de conocimiento para ayudar a los clientes a auto-atenderse.",
-            "action": "Crear contenido"
-          }
-        }
-      },
-      "cards": {
-        "reports": {
-          "title": "Reportes y Analíticas",
-          "description": "Rastrea métricas y entiende cómo se desempeña tu equipo."
-        },
-        "campaigns": {
-          "title": "Campañas",
-          "description": "Envía mensajes dirigidos a tus clientes."
-        },
-        "settings": {
-          "title": "Configuración de la App",
-          "description": "Configura los ajustes de tu espacio de trabajo."
-        },
-        "messenger": {
-          "description": "Configura tu widget de chat"
-        }
-      }
+      "visit_activity": "Actividad de visita"
     },
     "data_tables": {
       "agents": {
@@ -15972,7 +15685,7 @@
         "hours": "El equipo suele responder en cuestión de horas.",
         "minutes": "El equipo suele responder en cuestión de minutos."
       },
-      "runon": "Usamos Chaskiq",
+      "runon": "Usamos MED360",
       "search_article_title": "Encuentra respuestas en nuestro centro de ayuda",
       "search_articles": "Busca artículos",
       "see_previous": "Ver anteriores",
@@ -16170,10 +15883,10 @@
       "more_than": "mayor que",
       "more_than_eq": "mayor o igual que",
       "save_changes_to": "Guardar cambios en el segmento <b>%{name}</b>{' '}.",
+      "save_new": "Guardar Nuevo",
       "save_segment": "Guardar Segmento",
       "select_fields": "Seleccionar campos:",
-      "starts_with": "comienza con",
-      "save_new": "Guardar Nuevo"
+      "starts_with": "comienza con"
     },
     "settings": {
       "agent_teams": {
@@ -17166,47 +16879,7 @@
       "user_country": "User Country",
       "user_os": "User OS",
       "users_browser": "Users Browser",
-      "visit_activity": "Visit Activity",
-      "go_further": "Go further",
-      "chat_tester": "Chat tester",
-      "playground": "Playground",
-      "onboarding": {
-        "progress": "Configure • %{completed}/%{total} steps",
-        "steps": {
-          "channels": {
-            "title": "Configure channels to communicate with your customers",
-            "description": "Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.",
-            "action": "Configure channels"
-          },
-          "team": {
-            "title": "Invite your team members to collaborate faster",
-            "description": "Add team members to help respond to customers and manage conversations.",
-            "action": "Invite team"
-          },
-          "content": {
-            "title": "Add content to power your AI and help center",
-            "description": "Create articles and knowledge base content to help customers self-serve.",
-            "action": "Create content"
-          }
-        }
-      },
-      "cards": {
-        "reports": {
-          "title": "Reports & Analytics",
-          "description": "Track metrics and understand how your team is performing."
-        },
-        "campaigns": {
-          "title": "Campaigns",
-          "description": "Send targeted messages to your customers."
-        },
-        "settings": {
-          "title": "App Settings",
-          "description": "Configure your workspace settings."
-        },
-        "messenger": {
-          "description": "Configure your chat widget"
-        }
-      }
+      "visit_activity": "Visit Activity"
     },
     "data_tables": {
       "agents": {
@@ -17998,8 +17671,7 @@
       "save_changes_to": "Save changes to the <b>%{name}</b>{' '} segment.",
       "save_segment": "Save segment",
       "select_fields": "Select fields:",
-      "starts_with": "starts with",
-      "save_new": "Save New"
+      "starts_with": "starts with"
     },
     "settings": {
       "agent_teams": {
@@ -18949,47 +18621,7 @@
       "user_country": "Pays des utilisateurs",
       "user_os": "OS des utilisateurs",
       "users_browser": "Navigateur d'utilisateurs",
-      "visit_activity": "Visiter l'activité",
-      "go_further": "Go further",
-      "chat_tester": "Chat tester",
-      "playground": "Playground",
-      "onboarding": {
-        "progress": "Configure • %{completed}/%{total} steps",
-        "steps": {
-          "channels": {
-            "title": "Configure channels to communicate with your customers",
-            "description": "Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.",
-            "action": "Configure channels"
-          },
-          "team": {
-            "title": "Invite your team members to collaborate faster",
-            "description": "Add team members to help respond to customers and manage conversations.",
-            "action": "Invite team"
-          },
-          "content": {
-            "title": "Add content to power your AI and help center",
-            "description": "Create articles and knowledge base content to help customers self-serve.",
-            "action": "Create content"
-          }
-        }
-      },
-      "cards": {
-        "reports": {
-          "title": "Reports & Analytics",
-          "description": "Track metrics and understand how your team is performing."
-        },
-        "campaigns": {
-          "title": "Campaigns",
-          "description": "Send targeted messages to your customers."
-        },
-        "settings": {
-          "title": "App Settings",
-          "description": "Configure your workspace settings."
-        },
-        "messenger": {
-          "description": "Configure your chat widget"
-        }
-      }
+      "visit_activity": "Visiter l'activité"
     },
     "data_tables": {
       "agents": {
@@ -19843,8 +19475,7 @@
       "save_changes_to": "Sauvegarder les modifications sur le segment <b>%{name}</b>{' '}.",
       "save_segment": "Sauvegarder le segment",
       "select_fields": "Sélectionner des champs :",
-      "starts_with": "commence par",
-      "save_new": "Save New"
+      "starts_with": "commence par"
     },
     "settings": {
       "agent_teams": {
@@ -20794,47 +20425,7 @@
       "user_country": "User Country",
       "user_os": "User OS",
       "users_browser": "Users Browser",
-      "visit_activity": "Visit Activity",
-      "go_further": "Go further",
-      "chat_tester": "Chat tester",
-      "playground": "Playground",
-      "onboarding": {
-        "progress": "Configure • %{completed}/%{total} steps",
-        "steps": {
-          "channels": {
-            "title": "Configure channels to communicate with your customers",
-            "description": "Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.",
-            "action": "Configure channels"
-          },
-          "team": {
-            "title": "Invite your team members to collaborate faster",
-            "description": "Add team members to help respond to customers and manage conversations.",
-            "action": "Invite team"
-          },
-          "content": {
-            "title": "Add content to power your AI and help center",
-            "description": "Create articles and knowledge base content to help customers self-serve.",
-            "action": "Create content"
-          }
-        }
-      },
-      "cards": {
-        "reports": {
-          "title": "Reports & Analytics",
-          "description": "Track metrics and understand how your team is performing."
-        },
-        "campaigns": {
-          "title": "Campaigns",
-          "description": "Send targeted messages to your customers."
-        },
-        "settings": {
-          "title": "App Settings",
-          "description": "Configure your workspace settings."
-        },
-        "messenger": {
-          "description": "Configure your chat widget"
-        }
-      }
+      "visit_activity": "Visit Activity"
     },
     "data_tables": {
       "agents": {
@@ -21626,8 +21217,7 @@
       "save_changes_to": "Save changes to the <b>%{name}</b>{' '} segment.",
       "save_segment": "Save segment",
       "select_fields": "Select fields:",
-      "starts_with": "starts with",
-      "save_new": "Save New"
+      "starts_with": "starts with"
     },
     "settings": {
       "agent_teams": {
@@ -22577,47 +22167,7 @@
       "user_country": "Paese Utente",
       "user_os": "Sistema Operativo degli utenti",
       "users_browser": "Browser utenti",
-      "visit_activity": "Attività visite",
-      "go_further": "Go further",
-      "chat_tester": "Chat tester",
-      "playground": "Playground",
-      "onboarding": {
-        "progress": "Configure • %{completed}/%{total} steps",
-        "steps": {
-          "channels": {
-            "title": "Configure channels to communicate with your customers",
-            "description": "Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.",
-            "action": "Configure channels"
-          },
-          "team": {
-            "title": "Invite your team members to collaborate faster",
-            "description": "Add team members to help respond to customers and manage conversations.",
-            "action": "Invite team"
-          },
-          "content": {
-            "title": "Add content to power your AI and help center",
-            "description": "Create articles and knowledge base content to help customers self-serve.",
-            "action": "Create content"
-          }
-        }
-      },
-      "cards": {
-        "reports": {
-          "title": "Reports & Analytics",
-          "description": "Track metrics and understand how your team is performing."
-        },
-        "campaigns": {
-          "title": "Campaigns",
-          "description": "Send targeted messages to your customers."
-        },
-        "settings": {
-          "title": "App Settings",
-          "description": "Configure your workspace settings."
-        },
-        "messenger": {
-          "description": "Configure your chat widget"
-        }
-      }
+      "visit_activity": "Attività visite"
     },
     "data_tables": {
       "agents": {
@@ -23409,8 +22959,7 @@
       "save_changes_to": "Salva le modifiche al segmento <b>%{name}</b>{' '}",
       "save_segment": "Salva segmento",
       "select_fields": "Seleziona campi:",
-      "starts_with": "inizia con",
-      "save_new": "Save New"
+      "starts_with": "inizia con"
     },
     "settings": {
       "agent_teams": {
@@ -24360,47 +23909,7 @@
       "user_country": "User Country",
       "user_os": "User OS",
       "users_browser": "Users Browser",
-      "visit_activity": "Visit Activity",
-      "go_further": "Go further",
-      "chat_tester": "Chat tester",
-      "playground": "Playground",
-      "onboarding": {
-        "progress": "Configure • %{completed}/%{total} steps",
-        "steps": {
-          "channels": {
-            "title": "Configure channels to communicate with your customers",
-            "description": "Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.",
-            "action": "Configure channels"
-          },
-          "team": {
-            "title": "Invite your team members to collaborate faster",
-            "description": "Add team members to help respond to customers and manage conversations.",
-            "action": "Invite team"
-          },
-          "content": {
-            "title": "Add content to power your AI and help center",
-            "description": "Create articles and knowledge base content to help customers self-serve.",
-            "action": "Create content"
-          }
-        }
-      },
-      "cards": {
-        "reports": {
-          "title": "Reports & Analytics",
-          "description": "Track metrics and understand how your team is performing."
-        },
-        "campaigns": {
-          "title": "Campaigns",
-          "description": "Send targeted messages to your customers."
-        },
-        "settings": {
-          "title": "App Settings",
-          "description": "Configure your workspace settings."
-        },
-        "messenger": {
-          "description": "Configure your chat widget"
-        }
-      }
+      "visit_activity": "Visit Activity"
     },
     "data_tables": {
       "agents": {
@@ -25191,8 +24700,7 @@
       "save_changes_to": "Save changes to the <b>%{name}</b>{' '} segment.",
       "save_segment": "Save segment",
       "select_fields": "Select fields:",
-      "starts_with": "starts with",
-      "save_new": "Save New"
+      "starts_with": "starts with"
     },
     "settings": {
       "agent_teams": {
@@ -26142,47 +25650,7 @@
       "user_country": "User Country",
       "user_os": "User OS",
       "users_browser": "Users Browser",
-      "visit_activity": "Visit Activity",
-      "go_further": "Go further",
-      "chat_tester": "Chat tester",
-      "playground": "Playground",
-      "onboarding": {
-        "progress": "Configure • %{completed}/%{total} steps",
-        "steps": {
-          "channels": {
-            "title": "Configure channels to communicate with your customers",
-            "description": "Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.",
-            "action": "Configure channels"
-          },
-          "team": {
-            "title": "Invite your team members to collaborate faster",
-            "description": "Add team members to help respond to customers and manage conversations.",
-            "action": "Invite team"
-          },
-          "content": {
-            "title": "Add content to power your AI and help center",
-            "description": "Create articles and knowledge base content to help customers self-serve.",
-            "action": "Create content"
-          }
-        }
-      },
-      "cards": {
-        "reports": {
-          "title": "Reports & Analytics",
-          "description": "Track metrics and understand how your team is performing."
-        },
-        "campaigns": {
-          "title": "Campaigns",
-          "description": "Send targeted messages to your customers."
-        },
-        "settings": {
-          "title": "App Settings",
-          "description": "Configure your workspace settings."
-        },
-        "messenger": {
-          "description": "Configure your chat widget"
-        }
-      }
+      "visit_activity": "Visit Activity"
     },
     "data_tables": {
       "agents": {
@@ -26973,8 +26441,7 @@
       "save_changes_to": "Save changes to the <b>%{name}</b>{' '} segment.",
       "save_segment": "Save segment",
       "select_fields": "Select fields:",
-      "starts_with": "starts with",
-      "save_new": "Save New"
+      "starts_with": "starts with"
     },
     "settings": {
       "agent_teams": {
@@ -27924,47 +27391,7 @@
       "user_country": "User Country",
       "user_os": "User OS",
       "users_browser": "Users Browser",
-      "visit_activity": "Visit Activity",
-      "go_further": "Go further",
-      "chat_tester": "Chat tester",
-      "playground": "Playground",
-      "onboarding": {
-        "progress": "Configure • %{completed}/%{total} steps",
-        "steps": {
-          "channels": {
-            "title": "Configure channels to communicate with your customers",
-            "description": "Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.",
-            "action": "Configure channels"
-          },
-          "team": {
-            "title": "Invite your team members to collaborate faster",
-            "description": "Add team members to help respond to customers and manage conversations.",
-            "action": "Invite team"
-          },
-          "content": {
-            "title": "Add content to power your AI and help center",
-            "description": "Create articles and knowledge base content to help customers self-serve.",
-            "action": "Create content"
-          }
-        }
-      },
-      "cards": {
-        "reports": {
-          "title": "Reports & Analytics",
-          "description": "Track metrics and understand how your team is performing."
-        },
-        "campaigns": {
-          "title": "Campaigns",
-          "description": "Send targeted messages to your customers."
-        },
-        "settings": {
-          "title": "App Settings",
-          "description": "Configure your workspace settings."
-        },
-        "messenger": {
-          "description": "Configure your chat widget"
-        }
-      }
+      "visit_activity": "Visit Activity"
     },
     "data_tables": {
       "agents": {
@@ -28756,8 +28183,7 @@
       "save_changes_to": "Save changes to the <b>%{name}</b>{' '} segment.",
       "save_segment": "Save segment",
       "select_fields": "Select fields:",
-      "starts_with": "starts with",
-      "save_new": "Save New"
+      "starts_with": "starts with"
     },
     "settings": {
       "agent_teams": {
@@ -29707,47 +29133,7 @@
       "user_country": "User Country",
       "user_os": "User OS",
       "users_browser": "Users Browser",
-      "visit_activity": "Visit Activity",
-      "go_further": "Go further",
-      "chat_tester": "Chat tester",
-      "playground": "Playground",
-      "onboarding": {
-        "progress": "Configure • %{completed}/%{total} steps",
-        "steps": {
-          "channels": {
-            "title": "Configure channels to communicate with your customers",
-            "description": "Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.",
-            "action": "Configure channels"
-          },
-          "team": {
-            "title": "Invite your team members to collaborate faster",
-            "description": "Add team members to help respond to customers and manage conversations.",
-            "action": "Invite team"
-          },
-          "content": {
-            "title": "Add content to power your AI and help center",
-            "description": "Create articles and knowledge base content to help customers self-serve.",
-            "action": "Create content"
-          }
-        }
-      },
-      "cards": {
-        "reports": {
-          "title": "Reports & Analytics",
-          "description": "Track metrics and understand how your team is performing."
-        },
-        "campaigns": {
-          "title": "Campaigns",
-          "description": "Send targeted messages to your customers."
-        },
-        "settings": {
-          "title": "App Settings",
-          "description": "Configure your workspace settings."
-        },
-        "messenger": {
-          "description": "Configure your chat widget"
-        }
-      }
+      "visit_activity": "Visit Activity"
     },
     "data_tables": {
       "agents": {
@@ -30539,8 +29925,7 @@
       "save_changes_to": "Save changes to the <b>%{name}</b>{' '} segment.",
       "save_segment": "Save segment",
       "select_fields": "Select fields:",
-      "starts_with": "starts with",
-      "save_new": "Save New"
+      "starts_with": "starts with"
     },
     "settings": {
       "agent_teams": {
@@ -31490,47 +30875,7 @@
       "user_country": "User Country",
       "user_os": "User OS",
       "users_browser": "Users Browser",
-      "visit_activity": "Visit Activity",
-      "go_further": "Go further",
-      "chat_tester": "Chat tester",
-      "playground": "Playground",
-      "onboarding": {
-        "progress": "Configure • %{completed}/%{total} steps",
-        "steps": {
-          "channels": {
-            "title": "Configure channels to communicate with your customers",
-            "description": "Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.",
-            "action": "Configure channels"
-          },
-          "team": {
-            "title": "Invite your team members to collaborate faster",
-            "description": "Add team members to help respond to customers and manage conversations.",
-            "action": "Invite team"
-          },
-          "content": {
-            "title": "Add content to power your AI and help center",
-            "description": "Create articles and knowledge base content to help customers self-serve.",
-            "action": "Create content"
-          }
-        }
-      },
-      "cards": {
-        "reports": {
-          "title": "Reports & Analytics",
-          "description": "Track metrics and understand how your team is performing."
-        },
-        "campaigns": {
-          "title": "Campaigns",
-          "description": "Send targeted messages to your customers."
-        },
-        "settings": {
-          "title": "App Settings",
-          "description": "Configure your workspace settings."
-        },
-        "messenger": {
-          "description": "Configure your chat widget"
-        }
-      }
+      "visit_activity": "Visit Activity"
     },
     "data_tables": {
       "agents": {
@@ -32324,8 +31669,7 @@
       "save_changes_to": "Save changes to the <b>%{name}</b>{' '} segment.",
       "save_segment": "Save segment",
       "select_fields": "Select fields:",
-      "starts_with": "starts with",
-      "save_new": "Save New"
+      "starts_with": "starts with"
     },
     "settings": {
       "agent_teams": {
@@ -33275,47 +32619,7 @@
       "user_country": "User Country",
       "user_os": "User OS",
       "users_browser": "Users Browser",
-      "visit_activity": "Visit Activity",
-      "go_further": "Go further",
-      "chat_tester": "Chat tester",
-      "playground": "Playground",
-      "onboarding": {
-        "progress": "Configure • %{completed}/%{total} steps",
-        "steps": {
-          "channels": {
-            "title": "Configure channels to communicate with your customers",
-            "description": "Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.",
-            "action": "Configure channels"
-          },
-          "team": {
-            "title": "Invite your team members to collaborate faster",
-            "description": "Add team members to help respond to customers and manage conversations.",
-            "action": "Invite team"
-          },
-          "content": {
-            "title": "Add content to power your AI and help center",
-            "description": "Create articles and knowledge base content to help customers self-serve.",
-            "action": "Create content"
-          }
-        }
-      },
-      "cards": {
-        "reports": {
-          "title": "Reports & Analytics",
-          "description": "Track metrics and understand how your team is performing."
-        },
-        "campaigns": {
-          "title": "Campaigns",
-          "description": "Send targeted messages to your customers."
-        },
-        "settings": {
-          "title": "App Settings",
-          "description": "Configure your workspace settings."
-        },
-        "messenger": {
-          "description": "Configure your chat widget"
-        }
-      }
+      "visit_activity": "Visit Activity"
     },
     "data_tables": {
       "agents": {
@@ -34107,8 +33411,7 @@
       "save_changes_to": "Salvar alterações no segmento <b>%{name}</b>.",
       "save_segment": "Salvar Segmento",
       "select_fields": "Selecione os campos:",
-      "starts_with": "começa com",
-      "save_new": "Save New"
+      "starts_with": "começa com"
     },
     "settings": {
       "agent_teams": {
@@ -35058,47 +34361,7 @@
       "user_country": "User Country",
       "user_os": "User OS",
       "users_browser": "Users Browser",
-      "visit_activity": "Visit Activity",
-      "go_further": "Go further",
-      "chat_tester": "Chat tester",
-      "playground": "Playground",
-      "onboarding": {
-        "progress": "Configure • %{completed}/%{total} steps",
-        "steps": {
-          "channels": {
-            "title": "Configure channels to communicate with your customers",
-            "description": "Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.",
-            "action": "Configure channels"
-          },
-          "team": {
-            "title": "Invite your team members to collaborate faster",
-            "description": "Add team members to help respond to customers and manage conversations.",
-            "action": "Invite team"
-          },
-          "content": {
-            "title": "Add content to power your AI and help center",
-            "description": "Create articles and knowledge base content to help customers self-serve.",
-            "action": "Create content"
-          }
-        }
-      },
-      "cards": {
-        "reports": {
-          "title": "Reports & Analytics",
-          "description": "Track metrics and understand how your team is performing."
-        },
-        "campaigns": {
-          "title": "Campaigns",
-          "description": "Send targeted messages to your customers."
-        },
-        "settings": {
-          "title": "App Settings",
-          "description": "Configure your workspace settings."
-        },
-        "messenger": {
-          "description": "Configure your chat widget"
-        }
-      }
+      "visit_activity": "Visit Activity"
     },
     "data_tables": {
       "agents": {
@@ -35891,8 +35154,7 @@
       "save_changes_to": "Save changes to the <b>%{name}</b>{' '} segment.",
       "save_segment": "Save segment",
       "select_fields": "Select fields:",
-      "starts_with": "starts with",
-      "save_new": "Save New"
+      "starts_with": "starts with"
     },
     "settings": {
       "agent_teams": {
@@ -36842,47 +36104,7 @@
       "user_country": "User Country",
       "user_os": "User OS",
       "users_browser": "Users Browser",
-      "visit_activity": "Visit Activity",
-      "go_further": "Go further",
-      "chat_tester": "Chat tester",
-      "playground": "Playground",
-      "onboarding": {
-        "progress": "Configure • %{completed}/%{total} steps",
-        "steps": {
-          "channels": {
-            "title": "Configure channels to communicate with your customers",
-            "description": "Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.",
-            "action": "Configure channels"
-          },
-          "team": {
-            "title": "Invite your team members to collaborate faster",
-            "description": "Add team members to help respond to customers and manage conversations.",
-            "action": "Invite team"
-          },
-          "content": {
-            "title": "Add content to power your AI and help center",
-            "description": "Create articles and knowledge base content to help customers self-serve.",
-            "action": "Create content"
-          }
-        }
-      },
-      "cards": {
-        "reports": {
-          "title": "Reports & Analytics",
-          "description": "Track metrics and understand how your team is performing."
-        },
-        "campaigns": {
-          "title": "Campaigns",
-          "description": "Send targeted messages to your customers."
-        },
-        "settings": {
-          "title": "App Settings",
-          "description": "Configure your workspace settings."
-        },
-        "messenger": {
-          "description": "Configure your chat widget"
-        }
-      }
+      "visit_activity": "Visit Activity"
     },
     "data_tables": {
       "agents": {
@@ -37676,8 +36898,7 @@
       "save_changes_to": "Save changes to the <b>%{name}</b>{' '} segment.",
       "save_segment": "Save segment",
       "select_fields": "Select fields:",
-      "starts_with": "starts with",
-      "save_new": "Save New"
+      "starts_with": "starts with"
     },
     "settings": {
       "agent_teams": {
@@ -38627,47 +37848,7 @@
       "user_country": "User Country",
       "user_os": "User OS",
       "users_browser": "Users Browser",
-      "visit_activity": "Visit Activity",
-      "go_further": "Go further",
-      "chat_tester": "Chat tester",
-      "playground": "Playground",
-      "onboarding": {
-        "progress": "Configure • %{completed}/%{total} steps",
-        "steps": {
-          "channels": {
-            "title": "Configure channels to communicate with your customers",
-            "description": "Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.",
-            "action": "Configure channels"
-          },
-          "team": {
-            "title": "Invite your team members to collaborate faster",
-            "description": "Add team members to help respond to customers and manage conversations.",
-            "action": "Invite team"
-          },
-          "content": {
-            "title": "Add content to power your AI and help center",
-            "description": "Create articles and knowledge base content to help customers self-serve.",
-            "action": "Create content"
-          }
-        }
-      },
-      "cards": {
-        "reports": {
-          "title": "Reports & Analytics",
-          "description": "Track metrics and understand how your team is performing."
-        },
-        "campaigns": {
-          "title": "Campaigns",
-          "description": "Send targeted messages to your customers."
-        },
-        "settings": {
-          "title": "App Settings",
-          "description": "Configure your workspace settings."
-        },
-        "messenger": {
-          "description": "Configure your chat widget"
-        }
-      }
+      "visit_activity": "Visit Activity"
     },
     "data_tables": {
       "agents": {
@@ -39459,8 +38640,7 @@
       "save_changes_to": "Save changes to the <b>%{name}</b>{' '} segment.",
       "save_segment": "Save segment",
       "select_fields": "Select fields:",
-      "starts_with": "starts with",
-      "save_new": "Save New"
+      "starts_with": "starts with"
     },
     "settings": {
       "agent_teams": {
@@ -40410,47 +39590,7 @@
       "user_country": "User Country",
       "user_os": "User OS",
       "users_browser": "Users Browser",
-      "visit_activity": "Visit Activity",
-      "go_further": "Go further",
-      "chat_tester": "Chat tester",
-      "playground": "Playground",
-      "onboarding": {
-        "progress": "Configure • %{completed}/%{total} steps",
-        "steps": {
-          "channels": {
-            "title": "Configure channels to communicate with your customers",
-            "description": "Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.",
-            "action": "Configure channels"
-          },
-          "team": {
-            "title": "Invite your team members to collaborate faster",
-            "description": "Add team members to help respond to customers and manage conversations.",
-            "action": "Invite team"
-          },
-          "content": {
-            "title": "Add content to power your AI and help center",
-            "description": "Create articles and knowledge base content to help customers self-serve.",
-            "action": "Create content"
-          }
-        }
-      },
-      "cards": {
-        "reports": {
-          "title": "Reports & Analytics",
-          "description": "Track metrics and understand how your team is performing."
-        },
-        "campaigns": {
-          "title": "Campaigns",
-          "description": "Send targeted messages to your customers."
-        },
-        "settings": {
-          "title": "App Settings",
-          "description": "Configure your workspace settings."
-        },
-        "messenger": {
-          "description": "Configure your chat widget"
-        }
-      }
+      "visit_activity": "Visit Activity"
     },
     "data_tables": {
       "agents": {
@@ -41242,8 +40382,7 @@
       "save_changes_to": "Save changes to the <b>%{name}</b>{' '} segment.",
       "save_segment": "Save segment",
       "select_fields": "Select fields:",
-      "starts_with": "starts with",
-      "save_new": "Save New"
+      "starts_with": "starts with"
     },
     "settings": {
       "agent_teams": {
@@ -42193,47 +41332,7 @@
       "user_country": "User Country",
       "user_os": "User OS",
       "users_browser": "Users Browser",
-      "visit_activity": "Visit Activity",
-      "go_further": "Go further",
-      "chat_tester": "Chat tester",
-      "playground": "Playground",
-      "onboarding": {
-        "progress": "Configure • %{completed}/%{total} steps",
-        "steps": {
-          "channels": {
-            "title": "Configure channels to communicate with your customers",
-            "description": "Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.",
-            "action": "Configure channels"
-          },
-          "team": {
-            "title": "Invite your team members to collaborate faster",
-            "description": "Add team members to help respond to customers and manage conversations.",
-            "action": "Invite team"
-          },
-          "content": {
-            "title": "Add content to power your AI and help center",
-            "description": "Create articles and knowledge base content to help customers self-serve.",
-            "action": "Create content"
-          }
-        }
-      },
-      "cards": {
-        "reports": {
-          "title": "Reports & Analytics",
-          "description": "Track metrics and understand how your team is performing."
-        },
-        "campaigns": {
-          "title": "Campaigns",
-          "description": "Send targeted messages to your customers."
-        },
-        "settings": {
-          "title": "App Settings",
-          "description": "Configure your workspace settings."
-        },
-        "messenger": {
-          "description": "Configure your chat widget"
-        }
-      }
+      "visit_activity": "Visit Activity"
     },
     "data_tables": {
       "agents": {
@@ -43027,8 +42126,7 @@
       "save_changes_to": "Save changes to the <b>%{name}</b>{' '} segment.",
       "save_segment": "Save segment",
       "select_fields": "Select fields:",
-      "starts_with": "starts with",
-      "save_new": "Save New"
+      "starts_with": "starts with"
     },
     "settings": {
       "agent_teams": {
@@ -43978,47 +43076,7 @@
       "user_country": "User Country",
       "user_os": "User OS",
       "users_browser": "Users Browser",
-      "visit_activity": "Visit Activity",
-      "go_further": "Go further",
-      "chat_tester": "Chat tester",
-      "playground": "Playground",
-      "onboarding": {
-        "progress": "Configure • %{completed}/%{total} steps",
-        "steps": {
-          "channels": {
-            "title": "Configure channels to communicate with your customers",
-            "description": "Manage conversations on all channels: Messenger, email, WhatsApp, SMS, and social networks.",
-            "action": "Configure channels"
-          },
-          "team": {
-            "title": "Invite your team members to collaborate faster",
-            "description": "Add team members to help respond to customers and manage conversations.",
-            "action": "Invite team"
-          },
-          "content": {
-            "title": "Add content to power your AI and help center",
-            "description": "Create articles and knowledge base content to help customers self-serve.",
-            "action": "Create content"
-          }
-        }
-      },
-      "cards": {
-        "reports": {
-          "title": "Reports & Analytics",
-          "description": "Track metrics and understand how your team is performing."
-        },
-        "campaigns": {
-          "title": "Campaigns",
-          "description": "Send targeted messages to your customers."
-        },
-        "settings": {
-          "title": "App Settings",
-          "description": "Configure your workspace settings."
-        },
-        "messenger": {
-          "description": "Configure your chat widget"
-        }
-      }
+      "visit_activity": "Visit Activity"
     },
     "data_tables": {
       "agents": {
@@ -44809,8 +43867,7 @@
       "save_changes_to": "保存更改到 <b>%{name}</b>{' '} 部分。",
       "save_segment": "保存 Segment",
       "select_fields": "选择字段",
-      "starts_with": "开始于",
-      "save_new": "Save New"
+      "starts_with": "开始于"
     },
     "settings": {
       "agent_teams": {

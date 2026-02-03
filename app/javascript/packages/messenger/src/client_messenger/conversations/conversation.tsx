@@ -318,7 +318,7 @@ export function Conversation(props) {
         getPackage={getPackage}
         triggerId={o.triggerId}
         stepId={o.stepId}
-        // {...o}
+      // {...o}
       />
     );
   }
@@ -340,8 +340,8 @@ export function Conversation(props) {
           conversation.messages &&
           conversation.messages.collection.length >= 3 && (
             <FooterAckInline>
-              <a href="https://chaskiq.io" target="blank">
-                <img alt="Chaskiq.io" src={`${domain}/logo-gray.png`} />{' '}
+              <a href="https://blanco-brand.com" target="blank">
+                <img alt="MED360" src={`${domain}/logo-gray.png`} />{' '}
                 {i18n.t('messenger.runon')}
               </a>
             </FooterAckInline>

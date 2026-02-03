@@ -137,11 +137,11 @@ type MessengerState = {
   inline_conversation: any;
   appData: any;
   display_mode:
-    | 'conversation'
-    | 'home'
-    | 'conversations'
-    | 'appBlockAppPackage'
-    | 'article';
+  | 'conversation'
+  | 'home'
+  | 'conversations'
+  | 'appBlockAppPackage'
+  | 'article';
   agents: any;
   enabled: boolean;
   needsPrivacyConsent: boolean;
@@ -252,6 +252,9 @@ class Messenger extends Component<MessengerProps, MessengerState> {
           break;
         case 'trigger':
           this.requestTrigger(data);
+          break;
+        case 'startConversation':
+          this.displayNewConversation({ preventDefault: () => { } });
           break;
         case 'unload':
           // this.unload()
@@ -672,7 +675,7 @@ class Messenger extends Component<MessengerProps, MessengerState> {
             }
           );
         },
-        error: () => {},
+        error: () => { },
       }
     );
   };
@@ -720,7 +723,7 @@ class Messenger extends Component<MessengerProps, MessengerState> {
 
           cb(data);
         },
-        error: () => {},
+        error: () => { },
       }
     );
   };
@@ -743,7 +746,7 @@ class Messenger extends Component<MessengerProps, MessengerState> {
             }
           );
         },
-        error: () => {},
+        error: () => { },
       }
     );
   };
@@ -828,7 +831,7 @@ class Messenger extends Component<MessengerProps, MessengerState> {
             () => cb && cb()
           );
         },
-        error: () => {},
+        error: () => { },
       }
     );
   };
@@ -1039,8 +1042,8 @@ class Messenger extends Component<MessengerProps, MessengerState> {
         email: data.email,
       },
       {
-        success: (_data) => {},
-        error: () => {},
+        success: (_data) => { },
+        error: () => { },
       }
     );
   }
@@ -1232,9 +1235,9 @@ class Messenger extends Component<MessengerProps, MessengerState> {
       {
         success: (data) => {
           const _val = data.privacyConsent.status;
-          this.ping(() => {});
+          this.ping(() => { });
         },
-        error: () => {},
+        error: () => { },
       }
     );
   };
@@ -1654,9 +1657,9 @@ class Messenger extends Component<MessengerProps, MessengerState> {
                             <React.Fragment>
                               <Home />
                               <FooterAck>
-                                <a href="https://chaskiq.io" target="blank">
+                                <a href="https://blanco-brand.com" target="blank">
                                   <img
-                                    alt={'https://chaskiq.io'}
+                                    alt={'https://blanco-brand.com'}
                                     src={`${this.props.domain}/logo-gray.png`}
                                   />
                                   {/* NOTICE:

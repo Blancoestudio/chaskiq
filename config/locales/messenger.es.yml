@@ -1,7 +1,7 @@
 
 es:
   messenger:
-    runon: 'Usamos Chaskiq'
+    runon: 'Usamos MED360'
     show_more: Mostrar más
     conversation_block:
       choosen: 'respondiste <strong>%{field}</strong>'

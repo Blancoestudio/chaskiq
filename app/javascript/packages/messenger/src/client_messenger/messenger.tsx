@@ -254,6 +254,7 @@ class Messenger extends Component<MessengerProps, MessengerState> {
           this.requestTrigger(data);
           break;
         case 'startConversation':
+          this.wakeup();
           this.displayNewConversation({ preventDefault: () => { } });
           break;
         case 'unload':

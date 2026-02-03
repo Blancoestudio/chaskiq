@@ -26,12 +26,12 @@ const pluginBabel = (options = {}) => ({
 
 			return new Promise((resolve, reject) => {
 				babel.transform(contents, babelOptions, (error, result) => {
-					if(error) {
+					if (error) {
 						console.log(error)
-						 reject(error) 
-					 } else { 
-						 resolve({ contents: result.code });
-					 }
+						reject(error)
+					} else {
+						resolve({ contents: result.code });
+					}
 				});
 			});
 		};
@@ -39,10 +39,9 @@ const pluginBabel = (options = {}) => ({
 		if (transform) return transformContents(transform);
 
 		build.onLoad({ filter, namespace }, async args => {
+			if (args.path.includes('node_modules') && !args.path.includes('reactour')) return null;
 
-			if (args.path.includes('node_modules') && !args.path.includes('reactour') ) return null;
-
-			if(args.path.includes(".json") || args.path.includes(".png") || args.path.includes(".css")  ) return null;
+			if (args.path.includes(".json") || args.path.includes(".png") || args.path.includes(".css")) return null;
 
 			const contents = await fs.promises.readFile(args.path, 'utf8');
 
